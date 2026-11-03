@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "c5db19340373fc9bb56b59dcff1d6e037fb4aeee"
+    "commit": "fadbdbdeceeaa6abc8eecbf859f1ed86e0f7235b"
   },
-  "patchSha256": "93c6abf089f37e9b6e689cd8f90f46efc62e24133fedfd51b52a70c768cd0cde",
+  "patchSha256": "90bd2152104b5ade2c61bfcbad3dc5fa3172764b6bdecbad12333108e1ba2b69",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1811,8 +1811,8 @@
     ".gitattributes": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "24ee31b07c9390e4e2fee2e8077b457fe8fe67ff761ed6d1b9cd5f231ac4ae29",
-    "README.md": "55596eb931ff193bb8d6225c6427bcc3ada4a717319eab6593fa344626ba8379",
+    "HACKATHON.md": "13cb16053e6666ae0552240bce36ed051b4048737407af8a8f0dc74dfbd76344",
+    "README.md": "96fd16e460994fe60bae2b7f4a8dbc258467dd89e637bf488c38b721e4696968",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "065a8ecf0f26dad35cb7bbff1ada0dd0da1bdc245f83265d156ccce1eb97fadb",
@@ -1995,15 +1995,15 @@
     "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
     "docs/arrangement-workflow.md": "884e6cae97d5951b2577a99ec23ff31df40c4658d1e5d51aaf8cd058d724bf5e",
     "docs/demo-subtitles.en.srt": "ada212145d3b2341695271dd90c18c583b1fcb48b244a8b7ab65072851032bb9",
-    "docs/demo-subtitles.md": "8014e2d9fa61f21777e57652d80c5c3d1ad6356542a7257d62072e80ef590a16",
+    "docs/demo-subtitles.md": "598967999b3240268e89fc35f9ae1ba17b0127993bfa1314d9a171c5379cbac3",
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
     "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "64235b86fd19cb88e3db3515c7b42b018feba2343d0a0f41a31efe217cfb24a9",
+    "docs/evidence.md": "522d13dd4e6086a72efe15db72c3a57b5fe29ca3b38029401e71adeb0649e881",
     "docs/manual-checks.md": "34485859f4fe09f13ae8c8e2b24f95610849fa41daa60aa5d125703500560450",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
-    "docs/model-comparison.md": "d2b00dacf73ae83c83ace4a0e13418768381e184cee63913a3b1971aa1ca5c2e",
+    "docs/model-comparison.md": "647ccd86cc66040e2311d480bb25726b0846497823984b19e822b41a2ab310d0",
     "docs/models.md": "913e0f50f399330619af700bfbdade8d4c0a231c2af4d423bbd34631e2a8f800",
     "docs/reharmonization-evaluation.md": "d355f95a3d9c81c20854fd03b49384d028b1323b9d60a7ae79b6324bd524c5da",
     "docs/reharmonization.md": "9f26a4278c0439cf463f73203cf508b9df184df98ad0f06a60c5872f7d8197e2",
