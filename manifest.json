@@ -9,7 +9,7 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "19ac751d3ce56e6c201d30fa0a34cce6601fc0a2"
+    "commit": "24fb6253d3e5bf7e7124626dd7b26a3103b93f9b"
   },
   "patchSha256": "121db0aaf38a3ee20a0b174f8eded283ad0e191f87bc0935593bf3d12481d6aa",
   "materializedFiles": {
@@ -2169,7 +2169,7 @@
     "frontend/src/components/RightPanel/GuitarFretboard.tsx": "b7296776e0fdce01c4ea365b53c3c8efa49dff9bbe8dfc217c743b1894618afc",
     "frontend/src/components/RightPanel/MidiStatus.tsx": "6608d61c5e47c540608ea34adfc7475f849a5c51f9a50778827401a406b80a8a",
     "frontend/src/components/RightPanel/PlaybackControls.tsx": null,
-    "frontend/src/components/RightPanel/ReharmControls.tsx": "2d9fb39c48dd94efb950361d6f50e8dce1ec5ee425bf9dfea36797f8628db293",
+    "frontend/src/components/RightPanel/ReharmControls.tsx": "e561f8591a9a47c828731e52b67e98524dc6bb0f13fc1fba293c0bb7acbe006a",
     "frontend/src/components/RightPanel/SongSettings.tsx": "4d6a4aeb752702c56f4d1db59c44ff525b333566f2e14c5ccf2a00dc5456e415",
     "frontend/src/components/RightPanel/ThemeToggle.tsx": "967d841070a0b2bbc2a6614e338d1dd4d22bd75a647493af51d0aa13792f20c4",
     "frontend/src/components/RightPanel/VoicingViewer.tsx": null,
@@ -2264,7 +2264,7 @@
     "frontend/src/engine/playbackStatus.ts": "bdcf1eca82a4150090f99f3af116f1df2c8584c37027d4d4d02fca5236a6971a",
     "frontend/src/engine/reharmContext.test.ts": "78445fc375ad009aa9eb3a6b344ea18b2027b0506c8c6b25bd0c0607e30dffd5",
     "frontend/src/engine/reharmonize.test.ts": "9c3bca4df0bb7cb79b1d1069613fe4006876279dda15f909b665aac706446ece",
-    "frontend/src/engine/reharmonize.ts": "2d976695cb3ec43f23e9ca0f2adbd743306996b8228330fdab8fbd15bdbf42d8",
+    "frontend/src/engine/reharmonize.ts": "74a95188e35be6df19e935cd6bcce2c7c8cb1893c6e1632f5360dead8da7d5d8",
     "frontend/src/engine/reharmonizeSession.ts": "bf44dde116b99593f14dced983759eac18ef0bf2ed4bdbda19696a7d6588aa69",
     "frontend/src/engine/romanNumeral.test.ts": "c3797783b8f9ef3ccefc3641dcb5f2843e463471cea6692060debe7fe826deaf",
     "frontend/src/engine/romanNumeral.ts": "2bde945f62c4c28b652e68ab50e2d9a79acdac67b30893e0c7bf7ccbc86b616a",
