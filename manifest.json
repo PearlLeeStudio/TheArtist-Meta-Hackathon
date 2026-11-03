@@ -9,16 +9,16 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "32d2d2a54960d89b45ed2abf91cfccc577d63d56"
+    "commit": "6ed1b50914c78c205ee7aabdde924c648caf292d"
   },
-  "patchSha256": "20ddbdd15d70275d1f49780bedbb896cedd6cb5bff31628da073ee9fd51bbd06",
+  "patchSha256": "f0b867027db622b083f6c584b2bb6e6b95cd7fb00ccea3866b41c56f2a5d203d",
   "files": {
     ".dockerignore": "dd1a6e9a716bca2e49d4ab873eda08299b9484b4d9c2fa428264a801d9c1be69",
     ".gitattributes": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
     "HACKATHON.md": "8673380e1e3e7130504c5418c1350c8a2d1d1f9bc0f407c61d56e5e875a01761",
-    "README.md": "a9af21a270a314203cf6e6744757a3e73e451581c897595191d56e1a673606de",
+    "README.md": "23b537e88e76d7d14bfa5d64220ece0fd09fe8ee7dd0c6dd0aee29e4747cb0b0",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "065a8ecf0f26dad35cb7bbff1ada0dd0da1bdc245f83265d156ccce1eb97fadb",
@@ -522,7 +522,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "23c22ae3ae24b2e96cb8157ae4f17ec6d7be21a3d56ef54db577f06fb61e3013",
     "scripts/build_submission.py": "7ef2c000493b62dc8c02845bae39d5fb72acc67c210c3b095765e5abe25f5643",
-    "scripts/submission_README.md": "933e29b89884bdcf123bb666f0c75783705f91139697aef7d96848162a597491",
+    "scripts/submission_README.md": "a3f965e11287216f5c2f17611987e108e946de5c3e1cf11ff384e5b759b5a9bf",
     "scripts/verify_reconstruction.py": "554aa473e8d3efa39b15e8cbda951df540fc05ddba1f76cf43ab288b00682771",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",

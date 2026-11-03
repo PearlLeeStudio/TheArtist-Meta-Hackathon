@@ -1365,10 +1365,10 @@ index 0000000000000000000000000000000000000000..d62b89491b2f66462f32d1d7fd5a5e9f
 +implemented features. Row 79 adds retrieved source excerpts, not generated analysis. The Logic Scripter MIDI FX export is row 38; its real-host checks remain
 +separate from opening an exported MIDI file.
 diff --git a/README.md b/README.md
-index 285a07505615110c0e9dd8ca1c7102473cd8d618..d65a0904e4e48b255bcaa6f31587cf066c74d79d 100644
+index 285a07505615110c0e9dd8ca1c7102473cd8d618..474219d6c97323c482b320c60acfdfabe865b632 100644
 --- a/README.md
 +++ b/README.md
-@@ -1,539 +1,751 @@
+@@ -1,539 +1,752 @@
  <h1 align="center">TheArtist</h1>
  
  <p align="center">
@@ -1946,6 +1946,7 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..d65a0904e4e48b255bcaa6f31587cf06
 +| | |
 +|---|---|
 +| 🎬 **Hackathon demo** | [TheArtist — From Chord Sketch to Your Own Music](https://youtu.be/wC-dkLfot-c) |
++| **Demo on X** | [Hackathon demo post](https://x.com/pearlmedicilee/status/2117606784819249170) |
 +| **Pre-hackathon demo** | [Existing score editor, MIDI input and chord generation](https://youtu.be/iSDj4VK9nKc) — baseline work, not the hackathon submission video |
 +| 🎬 **Demo videos** | [youtube.com/@StudioPearlLee](https://www.youtube.com/@StudioPearlLee) |
 +| 🤗 **Released models** | [huggingface.co/PearlLeeStudio](https://huggingface.co/PearlLeeStudio) — 7 base checkpoints + 11 LoRA adapters |
@@ -2573,7 +2574,7 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..d65a0904e4e48b255bcaa6f31587cf06
  
  ## Research
  
-@@ -563,17 +775,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
+@@ -563,17 +776,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
  
  ## Not in this repository
  
@@ -598105,13 +598106,14 @@ index 0000000000000000000000000000000000000000..89ff2a61c375a2f27be6ebf8653cbe06
 +    main()
 diff --git a/scripts/submission_README.md b/scripts/submission_README.md
 new file mode 100644
-index 0000000000000000000000000000000000000000..ab851405d903eea15466379f19001206281bdf0c
+index 0000000000000000000000000000000000000000..8c081ae39ba719bbabf8badaef6345bd326a9572
 --- /dev/null
 +++ b/scripts/submission_README.md
-@@ -0,0 +1,151 @@
+@@ -0,0 +1,152 @@
 +# TheArtist · Meta hackathon contribution
 +
 +[Watch the hackathon demo](https://youtu.be/wC-dkLfot-c) ·
++[Demo on X](https://x.com/pearlmedicilee/status/2117606784819249170) ·
 +[Live app — artist-daw.pearlleestudio.co](https://artist-daw.pearlleestudio.co) ·
 +[Development repository — TheArtist-DAW](https://github.com/PearlLeeStudio/TheArtist-DAW)
 +
