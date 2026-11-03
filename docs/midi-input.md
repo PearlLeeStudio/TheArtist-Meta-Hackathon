@@ -1,0 +1,122 @@
+# MIDI input and arrangement handoff
+
+MIDI connects both ends of the [arrangement workflow](arrangement-workflow.md):
+capture played harmony into the score, then transfer edited accompaniment into
+Logic or another DAW. Keyboard input captures chord decisions, not a recorded
+melody performance; the exported arrangement contains Harmony, Bass and Drums.
+
+Open the editor's **Input** tab, choose its **MIDI** tool, then **Enable MIDI**. Connection and live
+monitoring work without selecting a score slot. Writing a chord requires exactly
+one selected slot, the Input tab's MIDI tool in front and no open dialog. No selection, multiple selected
+slots, another tab, or a replaced song cannot receive a pending capture. Holding
+three or more notes for three seconds commits once and advances the selection;
+releasing early opens the existing review/confirm flow.
+
+## Chrome
+
+Automatic uses native Web MIDI over HTTPS, without requesting SysEx. Allow MIDI
+for the current site when Chrome asks. If access was previously denied, change
+that site's MIDI permission and reconnect. The app attaches connected input ports,
+responds to unplug/replug, and clears notes whose release could have been lost.
+Matching notes on different channels/ports release independently. A controller's
+all-notes-off/all-sound-off message clears only its own channel.
+
+Chrome can also use **Local bridge (Mac)** when direct access is unavailable.
+Switch connection mode while MIDI is disabled.
+The editor shows the first connected input name on one line; `(+1)` means one
+additional input is connected. Hover over the line for the full list. The second
+line explains the existing hold/review flow.
+
+## Safari on Mac
+
+Safari does not natively expose Web MIDI. The Mac bridge reads
+[CoreMIDI input](https://developer.apple.com/documentation/coremidi/midiinputportcreatewithblock(_:_:_:_:))
+and forwards note/control messages through a local connection window. Browser
+support is documented in [MDN's compatibility table](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/requestMIDIAccess#browser_compatibility).
+
+1. On the Mac physically connected to the keyboard, use Python 3 and Apple's
+   command-line developer tools (which provide Swift). No Python packages are needed.
+2. Install the [automatic login service](#automatic-startup-on-mac) once. For a
+   foreground session instead, run
+   `python3 /absolute/path/to/TheArtist-DAW/tools/midi-bridge/run.py` and keep that
+   terminal process running. The launcher builds its helper and module cache inside
+   `tools/midi-bridge/.build/`, which Git ignores.
+3. In Safari, open TheArtist-DAW's **Input → MIDI → Enable MIDI**. Automatic chooses the
+   local bridge when Web MIDI is unavailable. Allow the connection window to open
+   and keep that small window open while playing.
+4. Select one score slot to enter chords. Without a target, the connection only
+   monitors. Closing the connection window clears held notes and disconnects it.
+
+The bridge runs at `http://127.0.0.1:8768` on that Mac. It belongs on the user's
+computer, not the DigitalOcean model server. It supports the production Artist and
+Artist-DAW origins and local port 5173. Preview origins are deliberately not allowed;
+an additional origin must be explicitly added to the bridge allowlist.
+
+The HTTPS app does not fetch an insecure HTTP resource. A top-level local page
+receives a same-origin event stream, then uses `postMessage` to its exact app
+origin. The app checks the local origin, opened window and fresh connection nonce.
+The helper binds loopback only, checks the Host header, grants no cross-origin
+event access, and runs no caller-supplied commands: the only process it starts is the
+fixed `/usr/bin/open` call of the Logic Pro handoff described below. It opens no MIDI output
+port. Notes are not uploaded, written to disk, or recorded; the live queue is bounded.
+
+Native input-port enumeration and the actual local HTTP/SSE connection were checked
+on a Mac with three available input ports. The helper's `--self-test` mode prints the decoded messages for note-on/off,
+running status, interleaved realtime events, SysEx exclusion and all-notes-off for
+manual inspection; it has no automated assertion.
+Frontend tests cover stale connections, message provenance and target-only capture.
+These checks do not replace playing the physical keyboard in both browsers;
+physical keypress/browser confirmation remains a manual check.
+
+Mobile Safari is not a target for this Mac helper. A phone has no access to a
+keyboard attached to another machine's `127.0.0.1`.
+
+## Open a hosted score in Logic Pro
+
+The same Mac helper also supports **Export → Open in Logic Pro** on the hosted
+Artist-DAW site. The model server produces the MIDI; a separate, short-lived local
+window transfers it to the helper on this Mac. The helper saves a new `.mid` file
+under `tools/midi-bridge/.build/exports/` and asks macOS to open it in Logic. The
+window closes when the handoff is confirmed. MIDI input's connection window is
+independent and stays open. Ableton's export reveals the MIDI in Finder for dragging.
+
+Only the allowlisted app origin, the exact opener and a fresh nonce can initiate
+this transfer. The local POST requires the helper's own HTTP origin and JSON; it
+accepts bounded Standard MIDI files and fixed Logic/Finder commands. Files receive
+unique names and never replace an existing project. Errors remain visible in the
+Export menu. The MIDI download path works without the helper.
+
+Live keyboard notes remain unrecorded. Exported arrangements are intentionally
+saved on the Mac for the DAW; cloud generation/export still uses the existing API.
+
+## Automatic startup on Mac
+
+Install once on the Mac where Logic or the MIDI keyboard is used:
+
+```sh
+python3 /absolute/path/to/TheArtist-DAW/tools/midi-bridge/run.py --install
+```
+
+If a bridge is already running in a terminal, stop that process with Ctrl-C first.
+The installer builds the CoreMIDI helper and installs copies of it and the Python
+bridge in `~/Library/Application Support/TheArtist/MIDI Bridge/`. It registers
+`~/Library/LaunchAgents/co.pearlleestudio.theartist-midi-bridge.plist` with macOS.
+No administrator password or Python packages are required; Apple's command-line
+developer tools provide Swift and the system Python used by the service.
+
+The bridge starts immediately and at subsequent logins. macOS restarts it if it
+exits, including when its native MIDI helper stops. The terminal can be closed;
+the installed service does not depend on the checkout or an external drive staying
+connected. It remains local to this Mac and serves both the hosted Artist and
+Artist-DAW origins. A website cannot install or start a native helper by itself.
+
+Open `http://127.0.0.1:8768/health` to check the installed service, or run the launcher
+with `--status`. For updates, rerun `--install`; existing exported MIDI is retained.
+Installed exports are under the service folder's `.build/exports/`, and startup
+errors are in `bridge-error.log` in the same service folder.
+
+If the bridge is unavailable, the Export menu closes the failed connection window
+after eight seconds and shows the setup link. Start or install the bridge, then
+choose **Open in Logic Pro** again. Each attempt uses a fresh connection; a failed
+connection does not send a MIDI file. If a transfer was sent but no confirmation
+returned, check Logic before retrying, since that earlier transfer may have opened.

@@ -1,260 +1,324 @@
 {
-  "method": "Exact bytes and normalized three-line blocks; manual review remains required. A git-added file can contain pre-event code. All such files remain patch deltas, not claimed new assets.",
+  "method": "Exact bytes and normalized three-line blocks; manual review remains required. A git-added file can contain pre-event code. Extracted implementation stays in the patch; derived documentation, empty package markers and generated lock metadata are disclosed in README.",
   "addedFiles": [
     {
       "path": ".dockerignore",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": ".gitattributes",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "HACKATHON.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/annotated_music_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/compare_reharmonization.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/compare_saved_plans.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/compare_score_readers.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/export_plan_samples.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/external_eval_sources.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/listening_pack.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/listening_results.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/listening_template.html",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/plan_and_generate.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/probe_reharm_models.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/rank_reharmonization.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/real_score_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/reharm_eval_data.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/report_fixed_seed_plans.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/report_reharmonization.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "agent/run_fixed_seed_plans.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "ai/rag/omt.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "ai/rag/omt_manifest.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/mcp_server.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/plan.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/reharmonize.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/review.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/score_import.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/models/sections.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/routes/export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/routes/plan.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/routes/reharmonize.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/routes/review.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/routes/score_import.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/chord_context.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/chorus_memory.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/contracts.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/daw_launcher.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/env_flags.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/harmony_analysis.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/harmony_meta.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/key_anchor.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/limits.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/llm.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/planner.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/reharmonize.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/reharmonize_agent.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/review.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_analysis.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_assistance.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_completion.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_context.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_form.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_import.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_pdf.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/score_verification.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/scripter_export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/scripter_template.js",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/serving_readiness.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/smf_export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/app/services/theory_rag.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/__init__.py",
+      "delivery": "file",
       "candidates": [
         {
           "path": "backend/app/__init__.py",
@@ -284,82 +348,102 @@
     },
     {
       "path": "backend/scripts/chorus_smoke.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/experience_benchmark.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/__init__.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/chords.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/dataset.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/engines.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/metrics.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/report.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/harmony_eval/run.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/hosted_latency_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/hosted_workflow_smoke.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/import_matrix.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/inference_benchmark.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/llm_smoke.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/loading_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/plan_smoke.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/review_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/setup_omt.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/scripts/speed_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/__init__.py",
+      "delivery": "file",
       "candidates": [
         {
           "path": "backend/app/__init__.py",
@@ -389,298 +473,372 @@
     },
     {
       "path": "backend/tests/fixtures/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/fixtures/notes-only.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/fixtures/score-import.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/fixtures/vector-score-c.pdf",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/fixtures/vector-score-f.pdf",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_agent_eval_requests.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_autodeploy.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_capabilities.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_chord_context.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_chords_api.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_chorus_memory.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_fixed_seed_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_generation_length.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_genre_tables_parity.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_harmony_analysis.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_harmony_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_harmony_meta.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_inference_cache.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_inference_rag_gate.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_key_anchor.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_limits.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_listening_results.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_llm.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_mcp.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_meta_composer.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_meta_credit.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_midi_bridge.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_midi_bridge_install.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_model_loading.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_physics_voicing.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_plan_api.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_planner.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_reharm_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_reharm_ranks.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_reharmonize.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_review.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_review_eval.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_analysis.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_analysis_regressions.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_assistance.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_cache.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_form.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_import.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_import_stream.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_pdf.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_reader_comparison.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_score_verification.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_scripter_export.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_section_api.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_serving_readiness.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_song_api.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_song_form.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_song_rhythm.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_song_seed.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_static_host.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_theory_rag.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_unlimited_budget.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/test_warmup_keys.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/tests/vector_score_fixture.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/theartist_client/__init__.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "backend/theartist_client/client.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/Caddyfile",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/Dockerfile",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/autodeploy.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/autodeploy.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/catalog_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/compose.yaml",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/env.example",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/pages.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/pages.test.mjs",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/runtime/pyproject.toml",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/runtime/uv.lock",
+      "delivery": "file",
       "candidates": [
         {
           "path": "ai/uv.lock",
@@ -698,34 +856,42 @@
     },
     {
       "path": "deploy/runtime_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/serve.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/theartist-deploy.service",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/theartist-deploy.timer",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/vps.env.example",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "deploy/vps.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/architecture.md",
+      "delivery": "file",
       "candidates": [
         {
           "path": "README.md",
@@ -737,50 +903,62 @@
     },
     {
       "path": "docs/arrangement-workflow.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/demo-subtitles.en.srt",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/demo-subtitles.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/demo-timeline.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/editor-reference.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/evaluation.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/evidence.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/manual-checks.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/mcp.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/midi-input.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/model-comparison.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/models.md",
+      "delivery": "file",
       "candidates": [
         {
           "path": "README.md",
@@ -792,26 +970,32 @@
     },
     {
       "path": "docs/reharmonization-evaluation.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/reharmonization.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/score-analysis.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/score-reader-comparison.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/theory-retrieval.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/voyager-api.md",
+      "delivery": "file",
       "candidates": [
         {
           "path": "README.md",
@@ -823,622 +1007,777 @@
     },
     {
       "path": "docs/walkthrough.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "docs/web-projects.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/comparison.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/comparison.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/blind.html",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/chorus-blind.html",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-meta.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-rules.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/new_jazz_32-meta.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/new_jazz_32-rules.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/new_pop_32-meta.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/listening/new_pop_32-rules.mid",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1379/meta-medium.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1379/rules.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1380/meta-medium.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1380/rules.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1381/meta-medium.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1381/rules.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1382/meta-medium.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/fixed-seed/seed-1382/rules.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_bossa_f_16bar_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_country_g_16bar_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_hiphop_amin_8bar_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_jazz_f_8bar_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_pop_c_8bar_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/complete_rock_e_8bar_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_blues_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_blues_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_electronic_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_electronic_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_gospel_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_gospel_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_jazz_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_jazz_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_pop_32.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/new_pop_64.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/tight_blues_a_12bar_16_high.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/tight_blues_e_12bar_48_outro.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/tight_folk_g_14bar_16_outro.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/requests/tight_pop_c_10bar_32_high.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/results/meta-high.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/results/meta-low.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/results/meta-medium.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/results/rules.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/agent_eval/summary.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/external_eval/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/external_eval/four-reader-results.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/external_eval/import-results.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/external_eval/music-results.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/external_eval/sources.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/dataset.jsonl",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-auto.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-local.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-meta.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-openweight.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-real-songs-auto.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-real-songs-local.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-real-songs-meta.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/results-real-songs-openweight.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/harmony_eval/summary.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/import_eval/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/import_eval/context-20.pdf",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/import_eval/results.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/import_eval/run.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/import_eval/vector-matrix.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/local/vector-score-c.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/local/vector-score-f.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/chorus-reuse-smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/llm_smoke_d1.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/note_harmony_first_attempt.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/note_harmony_second_attempt.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/note_harmony_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/plan_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/printed_import_review_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/reharmonize_amazing_grace.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/reharmonize_aug7_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/reharmonize_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/review_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/meta/score_import_smoke.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/calls.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f2-f3-rank-results.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f2-f3-rank-summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f2-results.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f2-summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f3-results.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f3-summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f4-rank-results.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/f4-rank-summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/followup-calls.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/local-model-probe-summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/results.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/reharmonization/summary.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/review_eval/results-meta.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/review_eval/results-openweight.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/review_eval/summary.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/chorus-memory.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/chorus-memory.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/d1_after_full_length.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/d1_after_full_length.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/d1_before_full_length.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/d1_before_full_length.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/hosted_workflows.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/inference_cache.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/loading_after.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/loading_before.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/meta_after.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/meta_before.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/model_regression.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/model_regression_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/reconstruction.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/reharmonize_regression.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/runtime-performance.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/score_import.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/score_regression.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "experiments/speed/score_regression_probe.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/public/_routes.json",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/public/_worker.js",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/Layout.css",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/OperationProgress.css",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/OperationProgress.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/ReharmControls.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ChoiceKeyGrid.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ControllerPane.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/DrumsPane.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/InstrumentPane.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/PlayPanel.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/PlaybackStatus.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/RhythmPane.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/Transport.css",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/Transport.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/VisualPane.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/genreTag.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/paneKeys.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ui/KeyButton.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ui/Screen.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ui/StepRow.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ui/VolumeFader.css",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/ui/VolumeFader.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/RightPanel/play/usePlayStep.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ExportMenu.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ImportReviewBand.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ImportScoreDialog.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ImportedMeasureReview.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/PlanRunBand.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ReharmBand.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/ScoreContextMenu.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/SectionsDialog.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/SongFormDialog.tsx",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/importedBars.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/components/ScoreEditor/scoreSurface.ts",
+      "delivery": "patch",
       "candidates": [
         {
           "path": "frontend/src/components/MyPage/SessionStaff.tsx",
@@ -1456,46 +1795,57 @@
     },
     {
       "path": "frontend/src/components/ScoreEditor/useScoreClipboard.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/audioMixer.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/audioMixer.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/chordGenerator.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/chordParser.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/chordPreview.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/chordRhythm.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/chordVocabulary.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/dawBridge.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/dawBridge.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/drumPatterns.ts",
+      "delivery": "patch",
       "candidates": [
         {
           "path": "frontend/src/engine/drums.ts",
@@ -1507,38 +1857,47 @@
     },
     {
       "path": "frontend/src/engine/experienceTiming.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/experienceTiming.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/exportSpec.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/exportSpec.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/generationComparison.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/generationComparison.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/genreTables.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/genres.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/genres.ts",
+      "delivery": "patch",
       "candidates": [
         {
           "path": "frontend/src/components/RightPanel/SongSettings.tsx",
@@ -1550,50 +1909,62 @@
     },
     {
       "path": "frontend/src/engine/httpClient.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/httpClient.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/importRetention.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/importReview.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/importReview.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/instrumentAudio.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/instrumentAudio.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/instruments.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/keySignatures.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/keySignatures.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/manualChordDraft.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/manualChordDraft.ts",
+      "delivery": "patch",
       "candidates": [
         {
           "path": "frontend/src/components/RightPanel/ChordActions.tsx",
@@ -1605,302 +1976,377 @@
     },
     {
       "path": "frontend/src/engine/metaSession.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/metaSession.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/midiBridge.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/midiBridge.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/midiCaptureState.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/midiCaptureState.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/midiInput.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/mixer.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/pdf.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/pdfLayout.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/pdfLayout.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/planClient.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/planClient.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/playSettings.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/playSettings.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/playbackStatus.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/reharmContext.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/reharmonize.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/reharmonize.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/reharmonizeSession.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/romanNumeral.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreClipboard.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreClipboard.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreImport.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreImport.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreImportClient.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreImportClient.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreImportEvidence.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreLayout.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreShortcuts.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreShortcuts.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreStaveLayout.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/scoreStaveLayout.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/songForm.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/songForm.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/songTranspose.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/songTranspose.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/sseStream.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/engine/voicingEngine.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/generationStore.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/importCleanupStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/importReviewStore.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/importReviewStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/newSong.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/planStore.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/planStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/playMuteState.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/playMuteState.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/playStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/reharmonizeStore.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/reharmonizeStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/reviewStore.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/reviewStore.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/sessionStorage.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/songRetention.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "frontend/src/store/songStore.clipboard.test.ts",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "plugin/logic-scripter/README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "plugin/logic-scripter/example/theartist_chords.example.js",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "plugin/logic-scripter/test/scripter-host.mjs",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "plugin/logic-scripter/test/theartist_chords.test.mjs",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/07-controller.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/08-projects-export.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/09-logic-handoff.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/10-pdf-export.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/11-import-context.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/12-import-use-meta.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "screenshot/13-reharmonize-alternatives.png",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "scripts/bootstrap_submission.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "scripts/build_submission.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "scripts/submission_README.md",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "scripts/verify_reconstruction.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "tools/midi-bridge/.gitignore",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "tools/midi-bridge/CoreMidiInput.swift",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "tools/midi-bridge/bridge.py",
+      "delivery": "file",
       "candidates": []
     },
     {
       "path": "tools/midi-bridge/run.py",
+      "delivery": "file",
       "candidates": []
     }
   ]

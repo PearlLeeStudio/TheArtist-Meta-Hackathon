@@ -1,0 +1,161 @@
+"""Version and bounded result envelope shared by HTTP discovery and MCP."""
+
+import base64
+import binascii
+import json
+from typing import Any, Literal
+
+from pydantic import BaseModel, ConfigDict
+
+from app.models.export import MAX_EXPORT_BYTES, MAX_EXPORT_MEASURES, MIN_MIDI_BYTES
+from app.models.plan import MAX_PLAN_SECTION_BARS, MIN_PLAN_SECTION_BARS, TARGET_BARS
+from app.models.score_import import MAX_SCORE_BYTES, MAX_SCORE_MEASURES
+from app.services.env_flags import meta_enabled, meta_budget_unlimited
+from app.services.llm import LLMConfig, credit_stop_set, meta_availability
+from app.services.planner import MAX_META_CALLS, MAX_RUN_USD, RUN_BUDGET_S
+from app.services import theory_rag
+
+SCHEMA_VERSION = "1.0"
+MAX_JSON_STATE_BYTES = 1024 * 1024
+MAX_MCP_RESULT_BYTES = 6 * 1024 * 1024
+MAX_MCP_REQUEST_BYTES = 12 * 1024 * 1024
+TOOLS = ("capabilities", "list_models", "list_genres", "get_genre_preset", "generate_section",
+         "build_song", "render_midi", "import_score", "export_daw", "plan_song", "validate_plan")
+_MIDI_BASE64_KEYS = ("midi_b64", "dataBase64")  # build_song's and render_midi's MIDI bytes
+
+
+class ContractEnvelope(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    schemaVersion: Literal["1.0"] = SCHEMA_VERSION
+    data: dict[str, Any]
+
+
+def json_size(value: Any) -> int:
+    """UTF-8 bytes of the compact JSON encoding; NaN and Infinity are rejected."""
+    return len(json.dumps(value, ensure_ascii=False, allow_nan=False, separators=(",", ":")).encode("utf8"))
+
+
+def _base64_length(byte_count: int) -> int:
+    return 4 * ((byte_count + 2) // 3)
+
+
+def _check_midi_base64(encoded: Any) -> None:
+    if not isinstance(encoded, str) or len(encoded) > _base64_length(MAX_EXPORT_BYTES):
+        raise ValueError("MIDI exceeds the 4 MiB binary limit.")
+    try:
+        binary = base64.b64decode(encoded, validate=True)
+    except (binascii.Error, ValueError):
+        raise ValueError("The MIDI result is not valid base64.") from None
+    if not MIN_MIDI_BYTES <= len(binary) <= MAX_EXPORT_BYTES or not binary.startswith(b"MThd"):
+        raise ValueError("The MIDI result is invalid or exceeds 4 MiB.")
+
+
+def contract_result(data: BaseModel | dict) -> ContractEnvelope:
+    payload = data.model_dump(mode="json") if isinstance(data, BaseModel) else data
+    # Binary content has its own limit; music JSON remains bounded independently.
+    state = {key: value for key, value in payload.items() if key not in _MIDI_BASE64_KEYS}
+    if json_size(state) > MAX_JSON_STATE_BYTES:
+        raise ValueError("Music JSON exceeds the 1 MiB state limit.")
+    for key in _MIDI_BASE64_KEYS:
+        if key in payload:
+            _check_midi_base64(payload[key])
+    envelope = ContractEnvelope(data=payload)
+    if json_size(envelope.model_dump()) > MAX_MCP_RESULT_BYTES:
+        raise ValueError("The tool result exceeds the 6 MiB envelope limit.")
+    return envelope
+
+
+def _meta_status() -> dict[str, Any]:
+    """Whether Meta-backed features can run here: the flag, a key's presence, whether a request would be
+    taken now (available, with the reason when not), whether a credit stop line is set, the provider
+    and model, and the same for the judge role that Second ear runs on.
+
+    Never the key, where it came from, an error or a spend amount: discovery must answer even on a
+    broken configuration, which then shows as configured false with no provider.
+    """
+    try:
+        enabled = meta_enabled()
+    except ValueError:
+        enabled = False  # a typo in the flag refuses every Meta call
+    provider = model = None
+    configured = False
+    reader_usd = None
+    try:
+        config = LLMConfig.from_env()
+        provider, model, configured = config.provider, config.model, bool(config.api_key)
+        from app.services.score_import import SCORE_INPUT_TOKEN_BOUND, SCORE_MAX_OUTPUT_TOKENS
+        # The whole-file reader's reservation, so the option is offered only while it would be admitted
+        reader_usd = (SCORE_INPUT_TOKEN_BOUND * config.price_input_per_m
+                      + SCORE_MAX_OUTPUT_TOKENS * config.price_output_per_m) / 1_000_000
+    except Exception:  # an LLMConfigError, or a malformed URL that urlsplit rejects
+        pass
+    unavailable = meta_availability()
+    judge = meta_availability("judge")
+    from app.services.limits import full_file_score_import_allowed
+    reader = (unavailable is None and reader_usd is not None and provider == "meta" and model == "muse-spark-1.3"
+              and full_file_score_import_allowed() and meta_availability(need_usd=reader_usd) is None)
+    return {"enabled": enabled, "configured": configured, "available": unavailable is None,
+            "unavailableReason": unavailable, "creditStop": credit_stop_set(), "provider": provider, "model": model,
+            "judge": {"available": judge is None, "unavailableReason": judge},
+            "fullFileScoreImport": reader}
+
+
+def capabilities() -> ContractEnvelope:
+    return contract_result({
+        "name": "TheArtist", "transport": "streamable-http", "endpoint": "/mcp/",
+        "tools": list(TOOLS),
+        "meta": _meta_status(),
+        "rag": theory_rag.status(),
+        "contracts": {
+            "generate_section": "SectionGenerateRequest / SectionGenerateResponse",
+            "build_song": "SongGenerateRequest / SongGenerateResponse",
+            "render_midi": "ExportSpec / MIDI bytes",
+            "import_score": "ScoreImportRequest / ScoreImportResponse",
+            "plan_song": "PlanRequest / PlanTrace (plan, validation, calls; no sections)",
+            "validate_plan": "SongPlan + PlanRequest / {ok, errors: PlanIssue[]}",
+        },
+        "limits": {
+            "jsonStateBytes": MAX_JSON_STATE_BYTES, "midiBytes": MAX_EXPORT_BYTES,
+            "toolResultBytes": MAX_MCP_RESULT_BYTES, "requestBytes": MAX_MCP_REQUEST_BYTES,
+            "scoreFileBytes": MAX_SCORE_BYTES, "scoreMeasures": MAX_SCORE_MEASURES, "metaScoreMeasures": 128,
+            "scoreAssistHarmonyBars": 16, "scoreAssistCalls": 3, "scoreAssistRunUsd": None if meta_budget_unlimited() else .30,
+            "exportMeasures": MAX_EXPORT_MEASURES, "generatedBars": 64,
+            "planTargetBars": list(TARGET_BARS), "planSectionBars": [MIN_PLAN_SECTION_BARS, MAX_PLAN_SECTION_BARS],
+            "planLlmCalls": MAX_META_CALLS, "planRunUsd": None if meta_budget_unlimited() else MAX_RUN_USD, "planRunSeconds": RUN_BUDGET_S,
+        },
+        "sourceFields": {
+            "generate_section": ["source", "modelUsed"],
+            "build_song": ["model_used", "tracks.*.source", "seed"],
+            "import_score": ["analysisSource", "model", "requestId", "mode", "measures.*.chordBasis",
+                             "measures.*.confidence", "measures.*.note", "measures.*.notes",
+                             "measures.*.writtenNotes", "measures.*.bassNotes", "measures.*.noChord",
+                             "sections.*.basis", "formAnalysis"],
+            "plan_song": ["planner", "calls.*.provider", "calls.*.model", "calls.*.requestId",
+                          "sections.*.source", "sections.*.modelUsed", "sections.*.rulesSlots"],
+        },
+        "limitations": ["build_song returns one arrangement; candidate fan-out is not implemented.",
+                        "Score import and the editor default to local vector-PDF reading. The editor's Use Meta model checkbox "
+                        "opens readable PDFs locally first, then runs verified reading of the original in the background. "
+                        "The background review flags disagreements and fills untouched empty bars without replacing existing chords or user edits. "
+                        "Images and locally unsupported PDFs use verified reading directly. Verified reading makes at most one full-file Meta "
+                        "request, compares the readings on success, or explicitly reports local recovery when Meta is unavailable. "
+                        "A local reading completed within the two-second head start skips Meta if it exceeds Meta's 128-bar limit. "
+                        "Agreement is not accuracy proof. Unsupported local files are marked local_unavailable. "
+                        "Meta/auto/verified requires explicit selection and may incur API cost. Auto reviews up to 16 harmony "
+                        "bars with whole-score context and infers uncovered song-form sections, at most three calls/$0.30. "
+                        "It never switches an unsupported local file to a whole-file request. A public host requires "
+                        "THEARTIST_PUBLIC_META_READER=1 for meta; THEARTIST_META_UNLIMITED explicitly disables dollar caps for development. "
+                        "meta.fullFileScoreImport controls that explicit PDF/image option. With THEARTIST_META_ENABLED=0 "
+                        "(meta.enabled false), direct Meta calls return HTTP 503; verified Import recovers with the local reader. "
+                        "meta.available is false (meta.unavailableReason disabled, unconfigured or paused) while Meta "
+                        "controls should be off; meta.judge reports the judge role the same way. paused means less than $0.05 "
+                        "is left on the THEARTIST_META_CREDIT_USD credit stop line (or under the dollar cap with caps on), the "
+                        "ledger cannot be read, or the provider answered that the account has no credit. Under the credit line "
+                        "or that answer, calls are refused before any network request with HTTP 503, and Reharmonize picks its "
+                        "three alternatives without Meta (selection local). meta.creditStop says whether such a line is set. "
+                        "No amount is reported.",
+                        "Note-based harmony analysis is opt-in and returns reviewable interpretations, not verified original chords or imported melody notes.",
+                        "export_daw requires a loopback request, server opt-in, and explicit per-call confirmation.",
+                        "plan_song plans only: section chords come from generate_section, and the observe-then-act judgment runs "
+                        "only through POST /api/plan/song. Theory explanation is not an MCP tool yet."],
+    })

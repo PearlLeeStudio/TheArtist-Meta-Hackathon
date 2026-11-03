@@ -1,0 +1,398 @@
+# Arrangement workflow: browser, audio and DAW checks
+
+Follow the [arrangement guide](arrangement-workflow.md) from source material to
+editable DAW parts. Verify preserved musical decisions across each stage, as
+well as individual model responses.
+
+Checked items below were observed in the named application. Unchecked items remain
+manual coverage to complete; automated tests do not establish audible balance or
+hardware compatibility.
+
+Refresh the frontend, then check `/api/health` and `/api/capabilities`. Version
+`1.0` with eleven tools confirms the contract version and tool list (`/mcp/` itself is mounted only on non-public hosts);
+restart it only if unreachable or missing those routes, or after further backend
+changes. Safari can exercise the score and audio workflow; Chrome uses native Web MIDI, Safari needs the running local MIDI bridge ([MIDI input](midi-input.md)).
+An HTTP response establishes availability, not successful generation, audio or
+DAW execution. Check `meta.fullFileScoreImport` before expecting full-file import,
+and `rag.sources` before expecting OMT references (`omt: ready`, `berklee: disabled`).
+An inherited `THEARTIST_DISABLE_RAG=1` overrides the current OMT-on default.
+Logic detection may succeed even while Ableton is not installed.
+
+Follow the sections below in order: import and compare the source, revise a
+passage, audition the original and alternatives, adjust the controller, save and
+reopen, then inspect PDF/MIDI and the actual DAW result. Full-form planning and
+candidate review are implemented. Generation can attach OMT source excerpts with
+author/editor credit and license links; their browser checks below remain open.
+
+## Arrangement regression requirements
+
+Changes to arrangement controls, selection, chord parsing or shared model scoring
+must preserve both Generate and Reharmonize. Before publishing, run the frontend
+and backend suites, including the real PEFT-wrapper regression, build and lint.
+For model-call or scoring changes, also exercise the affected base checkpoints and
+genre adapters with real weights; mocked success is insufficient.
+
+After deployment, verify the affected flow in the hosted app using an imported or
+self-authored sparse score: select an unresolved passage and Generate; select an
+existing extended chord such as `Eaug7` and Reharmonize. Check Origin/Alter 1–3,
+disjoint multi-selection, conflicting choices, Apply, × cancel, reload persistence,
+card persistence across control/Play changes, active playback, original restoration,
+and preservation of untargeted slots. Exercise drag/right-click navigation when
+selection or control routing changes. Keep these checks on a separate score unless
+the user explicitly asks to edit their current score. Report untested behavior;
+passing unit tests alone does not complete this verification.
+
+## Observed workflow
+
+- [x] Isolated browser with the built frontend and in-process API, Meta disabled:
+  the authored vector-score C fixture opened as editable C harmony; Save and
+  reload preserved title, key, meter and chords; source details displayed chord
+  provenance without extracted pitches; Download MIDI completed. Storage, legacy
+  migration, undo and background-fill retention are covered by regressions.
+  This does not claim a new live Meta reading, listening pass or actual DAW-host check.
+- [x] Chrome, production API with an isolated local score: F1 generated four bars;
+  Reharmonize returned three real candidates. Alter 1 + 2 combined; Alter 3 replaced
+  only overlapping Alter 2. Apply kept Alter 1 + 3. Origin preview restored the
+  source; × returned to the last Apply, and reload retained the combination.
+  Four equal cards occupy one row, with Apply directly below Find 3 alternatives.
+- [x] User-confirmed: Logic Pro integration works in the user's own workflow.
+  This confirms the DAW handoff; the separate Scripter, hardware and detailed
+  meter/controller cases below retain their own verification scope.
+- [x] Hosted Chrome: Reharmonize with **Change up to 4 chords**, using four and
+  eight selected existing slots, returned three candidates with the Folk LoRA.
+  (Earlier A/B/C card interface; the current cards are Origin / Alter 1–3.) A/B/C
+  changed the score and Original restored the original passage. Chosen
+  candidates changed one or two chords; the setting is an upper bound. The
+  four-change search itself has automated coverage across every family.
+- [x] Hosted Chrome: New from Song Form preserved the imported project, started
+  a fresh 32-bar Meta song, appended an eight-bar own-model section, extended to
+  64 bars with Genre template, then Undo returned to 40 with target 48 selected.
+- [x] Safari: Muse Spark Full form produced a 16-bar song with five sections,
+  applied it and closed the dialog. No execution log appeared above the staff.
+- [x] Safari: section selection and real F1 passage generation returned Original
+  and three alternatives. Cmd+A selected all 32 chord slots; title-field Cmd+A
+  retained text selection. Section labels and chords survived a reload/remount.
+- [x] Safari: saved project displayed only four bars and offered the complete
+  Export menu at the right. Its Light PDF contained all 16 bars on one page,
+  with title, Roman numerals, slash chords and five section labels, inspected in Preview.
+- [x] Safari: light/dark Play, piano/guitar drawing and Rhythm/controller views
+  rendered. First Play changed to Pause and advanced the playhead; the Harmony
+  fader changed to 50 and double-click restored 100. This is visual/control evidence,
+  not a listening or keyboard-fader pass.
+- [x] Safari: the self-authored 20-bar C–F–C fixture imported with three inferred
+  sections (8/8/4), preserved note evidence and whole-score Meta explanations.
+- [x] Logic: Open in Logic produced three editable MIDI regions from bars 1–17,
+  80 BPM, 4/4, C major and Intro/Verse/Pre-Chorus/Chorus/Outro markers. This does
+  not establish DAW sound equivalence, controller interpretation or Scripter execution.
+- [x] Safari (build before the MIDI bridge, 2026-10-30): Enable MIDI reported unsupported Web MIDI.
+  Current builds open the local bridge window instead ([MIDI input](midi-input.md)).
+  Physical keypresses in Chrome and in Safari through the bridge remain untested.
+
+Screenshots: [Projects export](../screenshot/08-projects-export.png),
+[Logic handoff](../screenshot/09-logic-handoff.png),
+[PDF](../screenshot/10-pdf-export.png),
+[Import](../screenshot/11-import-context.png). Actual model evaluation and its
+failures are recorded in [evaluation.md](evaluation.md).
+
+## Import and revise
+
+- [ ] Import Score is immediately left of New from Song Form. Load a chord-symbol
+  PDF and compare each imported measure with the original file open in its own
+  viewer. Picking a file shows only its name under Choose file; no page of the
+  original appears in the dialog.
+  The original `backend/tests/fixtures/vector-score-c.pdf` and `vector-score-f.pdf`
+  are small notes-only starter cases. Leave **Use Meta model** unchecked for
+  local vector-PDF reading; check it for PNG/JPEG/WebP when the reader is available.
+- [ ] Verify one-chord expansion, unknown key/meter, unsupported chord names and
+  zero or three-plus symbols in a bar. Unknown key/meter still requires correction;
+  unfinished chord reading can open in the score view. Missing/unsupported slots
+  stay unassigned with the source preserved. Longer bars retain all source symbols
+  for placement rather than silently selecting two. Cancel, close and replace files
+  while a request is running.
+- [x] Earlier Reader-selector interface, Safari desktop: Reader could be selected before a file. Selecting the original
+  vector-score-c.pdf fixture only prepares its preview; changing Reader retains the
+  file without analyzing. **Analyze score** with TheArtist only completes the local
+  review. Changing Reader then clears the review and disables import until analysis
+  is requested again. A PNG can be selected with TheArtist only, reports the required
+  Reader when Analyze is clicked, and stays selected when switching to Meta only.
+  No Meta analysis was submitted in these checks.
+- [ ] An explicitly started analysis shows an indeterminate progress bar.
+  The unchecked **Use Meta model** path stays local. The checked path attempts
+  one original-file Meta reading, then local comparison or labeled local recovery.
+  Printed local chords/N.C. stay preserved and unequal bar counts retain the full
+  local result. Changing the checkbox during analysis cancels the browser request
+  and waits for **Analyze and import**; verify its late response cannot open a
+  score. Provider calls already sent may still finish and incur cost.
+  A readable score opens on the staff without a review stop. After import, select a bar
+  to check its chords, Roman numerals and retained source against the original.
+  Replace a file during analysis; an earlier result must not populate
+  the replacement. Cancel and retry without choosing the file again.
+- [ ] With **Use Meta model** on a readable PDF the score opens within seconds and
+  the **Meta review** band shows the reader stages, then the flagged/filled counts
+  with the request id; **Show bar** selects the first flagged bar; **Cancel** during
+  the run and **Dismiss** afterwards work; Initialize or loading a project removes
+  the band; a bar edited before the review finishes keeps the edit; a filled bar
+  shows Meta provenance in its source details and ⌘Z removes the fill.
+- [ ] A 465-bar PDF (e.g. a long jazz lead sheet) with **Use Meta model** checked
+  opens from the local reader within seconds with no Meta call (ledger unchanged),
+  and Reharmonize on bars deep inside it returns three candidates with addresses in
+  that bar range. Before `Hiromi`-length scores were handled, this request failed
+  with HTTP 500 (verification contract) and 422 (256-bar context).
+- [ ] Generate on an imported score with written chords after the selection: the
+  three cards read Option A, B, C in that order after the context comparison, and
+  the ranking frame names the compared reach for long scores.
+- [ ] In an Ab major import, D#7 / A#m7 / G#sus4 show V7 / ii7 / Isus4, D7sus4 and
+  EbM7#11 import as playable chords, and a manual G7 with b9 shows G7(b9) on the staff.
+- [ ] Import the original vector-score C/F
+  fixtures without a model key: verify read pitches, bass, local source and Roman I.
+  An unsupported scan reports that local reading cannot handle it without making
+  an implicit external model request; checking **Use Meta model** is explicit.
+- [ ] A score with a readable key and meter opens on the staff as soon as analysis
+  finishes, with no review stop. With a missing key/meter the dialog stays open, the
+  footer shows why Import reviewed score is disabled, the footer links focus the
+  highlighted fields, and Import reviewed score confirms the correction. Check on a
+  narrow mobile window as well as desktop.
+  Readable C/Am key aliases normalize to C major/A minor.
+- [ ] Review C, Am and G7 in C major: I, vi and V7 appear in the score view after
+  import. Change the review key to reanalyze fixed symbols; the main Key control
+  instead transposes the song. Check Bb/Eb borrowed chords and preserve Roman
+  labels in Projects and PDF. Source proposal metadata stays visible.
+- [ ] Explicit source N.C. produces an empty chord bar labeled N.C. Unresolved
+  slots are labeled Unresolved instead. Existing saved user-chosen N.C. metadata
+  remains separate from the original reading.
+  A repeat-measure sign copies the immediately preceding harmony and its origin,
+  including an unresolved/N.C. state; it cannot upgrade an inference to printed.
+  More than two changes retain all original symbols in the selected bar's source
+  and require placing the editor's two slots there. Nothing is silently truncated.
+- [ ] Explicit and inferred sections remain distinguishable. Edit labels, types and
+  boundaries; reject overlaps and invalid ranges. Clicking a section label selects it.
+- [ ] Drag a passage, Generate, and compare Original/A/B/C audibly with identical
+  settings. Restore Original, including voicings and rests. Changes outside the
+  selection survive. Replacing a score cannot apply an old in-flight result.
+- [ ] Simulate a failed generation request in browser developer tools without
+  stopping the server. Regular and Favorite Generate show an error, do not invent
+  offline candidates and leave the score unchanged. Restore the connection and
+  retry; the old error clears and real suggestions appear.
+
+## Theory references
+
+- [ ] With OMT ready and Berklee disabled in capabilities, generate a passage and
+  expand Theory references. Check that each excerpt has its actual source link,
+  authors/editors, license link, copyright and modification notice; follow both
+  links. These are retrieved passages, not a generated explanation of the song.
+- [ ] With retrieval disabled or the corpus unavailable, generate again: no stale
+  notes or Theory progress phase should appear. Existing user servers must not be
+  stopped to perform this check; use a separate configured test server.
+- [ ] Inspect the cards in light/dark themes and a narrow window. Compare actual
+  relevance to the selected transition, separately from whether the UI renders.
+
+## Projects
+
+- [ ] Each card shows only its first staff row, without a Preview score toggle.
+  Export at the right of Delete offers MIDI, PDF, Logic, Ableton and Scripter like
+  the score editor. With another song open, verify the file contains the selected
+  saved project's entire score, title, instruments, mutes and mixer settings.
+
+- [ ] Importing a score or editing another project preserves current work in
+  Projects. Save, refresh and choose the card's Edit action to return to the
+  editor. Chords, sections, Roman labels, safe source provenance and mixer levels survive;
+  extracted pitches, filenames and evidence prose do not.
+  Storage errors remain visible without replacing current work. Project-file
+  download and import controls are absent.
+- [ ] Select individual project checkboxes, then Select all; every card can be
+  selected and the all-selected state follows individual changes. Delete selected
+  asks for confirmation of the selection. Cancel keeps the list, selection and
+  playback unchanged. Confirm removes only the selected projects, including all
+  projects when Select all was used; retained projects survive refresh.
+- [ ] Simulate a storage failure before confirming Delete selected. The error
+  stays visible, the full project list and selection remain available, and playback
+  is unchanged. Restore storage and retry successfully.
+- [ ] Deleting the saved project currently playing stops its playback. Deleting
+  other selected projects lets the unselected playing project continue.
+
+## Play and controller
+
+- [ ] At 1366×768 and 1366×660, with panel width 300–320 px, the active chord and
+  compact 🎹/🎸 selector remain below transport on every Play tab. Confirm its
+  accessible labels and tooltips still say Piano/Guitar in English. The piano
+  keeps its natural SVG proportions with compact surrounding space. Switch only
+  the drawing and confirm the sound does not change. Check the bright Apple-style
+  silver hardware panel in the light theme and near-black panel, fader bays and
+  keys with light labels in the dark theme, with no green cast. Keep the upper
+  housing black and selected faces warm amber in both themes. At viewport
+  heights of at least 900 px, check that the
+  responsive panel fits without an outer vertical scrollbar. Shorter windows
+  retain an outer scrolling fallback. Instrument, Rhythm and Drums each fit their
+  available area without internal scrolling; the bottom faders stay in place when
+  changing tabs.
+- [ ] The header theme emoji is 8 px inside the unchanged 32×28 px button area.
+  Confirm its accessible label and pointer/keyboard operation remain available.
+- [ ] Piano and guitar drawings use a black background in both app themes. Check
+  note labels, muted text and guitar fret labels remain readable against it.
+  The black housing continues from the playback keys and CD through the chord,
+  drawing and selector surroundings to Rhythm/Drums, with no silver separators in
+  the margins or gaps. Its top corners are rounded, including the space above the
+  playback keys; subtle inset grooves distinguish the black keys without an
+  outlined frame.
+- [ ] All six black transport keys stay in one row beside the 27 px 💿 disc. The
+  main Play key is about 1.65 times the width of the neighboring keys. The disc
+  rotates only while actual playback runs, pauses at its current angle and respects
+  reduced-motion preferences. Play uses a system Futura-first stack when installed,
+  falling back to Avenir Next and then sans-serif.
+- [ ] Instrument exposes Auto and emoji family selectors for keyboard, guitar,
+  strings, woodwind and brass. The current family shows 4–8 readable sound buttons
+  without scrolling. Its family selectors and sound grid both use five columns;
+  the sound buttons stay 36 px tall, matching the family keys even when a family
+  has only one row. Extra pane height stays empty; reach all 31 sounds with pointer and keyboard and verify the
+  selected highlight and saved sound.
+- [ ] Below the keyboard/guitar drawing, Rhythm and Drums each have a full-width
+  black status window 60 px tall. Names such as Bossa and Samba use 12 px regular
+  text at the right, like the Piano label. Step cells are flat black/green, without
+  raised bevels or shadows. Rhythm HARM/BASS
+  and drum K/S/H steps remain visible when any selection tab is open. Tabs sit
+  below both windows. Muted rows remain distinguishable.
+- [ ] Each pane starts with a full-width On/Off button and a separate full-width
+  Auto choice. Instrument controls harmony mute, Rhythm controls Bass on/off, and
+  Drums restores its previous Auto/manual pattern when switched back on. Muting
+  harmony restores the prior audible level without changing the chosen instrument.
+  Check mute, change tabs, unmute and reload, and check that loading a different
+  project does not restore the previous project's instrument or pattern.
+- [ ] Rhythm and drum presets use four-column text radio buttons with wrapped
+  labels and fill the remaining height. Exactly one preset or Auto is selected
+  while enabled; Off is the top button state. Arrow/Home/End includes Auto and
+  presets without moving the On/Off button. No extra status windows appear inside
+  the selection tabs.
+- [ ] Selection buttons, tab keys and the small emoji selector have unlit faces
+  when unselected and a warm amber illuminated face when selected. Each uses a
+  recessed face with a dark upper groove and soft lower highlight, without a
+  decorative outline ring. Hover feedback ends when the pointer leaves.
+  Check pointer and keyboard selection, one selected preset per group, and Bass
+  off's unlit face and explicit off label. The separate status LEDs remain flat
+  green without shadows.
+- [ ] First Play works in Safari. Adjust Master/Harmony/Bass/Drums while notes ring;
+  each part at zero mutes independently, and Master at zero mutes everything.
+  Bottom controls have no tab. BPM and all four volume controls are vertical faders
+  with photo-inspired slim black tracks and 10 px round metal caps. Names sit below,
+  with no visible numbers, percent values or scales. Check that the full range-input
+  area remains usable for dragging despite the small visible cap. Check pointer/touch
+  drag, Up/Down, Home/End
+  and double-click defaults. Saving and reopening retains the actual levels.
+  BPM spans 20–300 in steps of one and resets to 80 on double-click.
+- [ ] Compare all 13 harmony rhythms using different first/second chords, especially
+  Charleston and Half. Check slash bass, second-slot-only preview, 3/4 and 6/8 tempo,
+  swing, live preset changes, pause/resume, seek, stop and loop.
+- [ ] In Chrome, enable MIDI, switch to Play and keep seeing incoming notes above every tab
+  without writing chords. Return to Input → MIDI for capture. Test early release,
+  a changed held voicing, fewer than three held notes, device unplug/reconnect,
+  panel collapse, a modal and a new song while notes are held.
+
+## New from Song Form
+
+Use **Start a new song** to preserve the current score in Projects before making
+a fresh arrangement. Use the existing sketch for an extension. Verify that a
+storage error retains the original score and that Undo leaves a valid target
+length selected. The hosted workflow above covers the normal save/start path.
+
+Safari also exercised the built single-origin server with Meta disabled and
+actual F1/OMT ready. Full form displayed **Keep the theme** selected and
+**New progression** as the alternative. Both choices could be switched; a
+64-bar Genre template run with Keep the theme completed, applied and closed the
+dialog. Three matching chorus bodies were visible on the resulting score.
+This did not measure audible latency or collect musical preference ratings.
+The generated blind-listening HTML and external hosting have not been manually
+verified. Existing unchecked audio/DAW cases below remain unchecked.
+
+- [ ] The dialog's title matches its button. Key, Genre and Model at the top are
+  pickers shared with the song settings above the staff and Input → Generate: a
+  new key transposes the score, a genre switches to the model it is served by, a
+  model sets its genre, and the controls above the staff show the same values.
+- [ ] **Section**: pick a part (Intro, Verse, Chorus …) and its length in **Bars**
+  (1–64; the hint shows the chords, two per bar); "Placed at bars …" follows the
+  last bar with chords. Generate writes it there.
+
+## Complete the form
+
+- [ ] New from Song Form → **Full form**: with an empty score pick a Genre first
+  (in the dialog or above the staff; a fresh score has none and both run buttons
+  stay disabled until it does), choose target bars, Outro and contrast and run
+  **Muse Spark**. The dialog stays open while generating and applies a successful
+  result before closing. The staff shows section labels without the execution band.
+- [ ] Reopen Full form → **Run details** for trace and Undo. Undo restores the exact
+  score; Export trace downloads JSON without keys. A changed sketch or settings
+  prevent an obsolete plan from being applied.
+- [ ] Ctrl+A / ⌘A selects every editor bar. In a title input or dialog it retains
+  native text selection. Projects does not intercept the shortcut.
+- [ ] Reharmonize: Find 3 alternatives, select Alter 1 + Alter 2, Apply → the cards
+  close, the chords stay, the controls read "Alter 1 + Alter 2 applied to M…", and
+  ⌘Z restores the passage; × before Apply discards the preview. The status line
+  above the staff after an import with Use Meta model is one quiet sentence and
+  clears itself after about twelve seconds.
+- [ ] README two-minute path without a PDF: on the live site set Key G major and Time 3/4,
+  click bar 1, paste the Amazing Grace chart from the README with ⌘V/Ctrl+V in Chrome and
+  Safari → sixteen bars appear (G | G D7 | Em C | …); Reharmonize bars 5–8 returns three
+  alternatives.
+- [ ] Reharmonize **Run details**: after Find 3 alternatives, the collapsed line opens
+  to the Meta model id with its tool calls, the scoring model, request ids, cost and
+  seconds; it is gone once Apply or × closes the cards. Both themes stay readable.
+- [ ] Clipboard editing in Chrome and Safari: drag two bars, ⌘C, select eight bars,
+  ⌘V repeats the pattern; click either half of a bar and ⌘V places copied whole bars
+  from that bar's start (no half-bar straddles a bar line); a half-bar copy keeps its
+  slot; a paste that runs past the last bar appends only the bars it needs; ⌘X empties
+  the selection and keeps it; Delete clears; ⌘Z undoes each step; the right-click
+  menu offers the same. Text `Dm7 G7 | Cmaj7` pasted from
+  another app lands as chords. Text inputs and open dialogs keep their native keys.
+  Not yet exercised in a browser by the implementer; the event wiring (including
+  Safari's `beforecopy`/`beforepaste` enabling) has unit coverage for the logic only.
+- [ ] Force a failure using an isolated test server or browser request blocking:
+  the dialog
+  shows the error and keeps the staff untouched. With the backend available,
+  **Genre template** still works without a Meta call.
+- [ ] Cancel an in-progress plan. The current bounded request may finish, but no
+  subsequent section or Meta request starts; already incurred cost stays recorded.
+- [ ] Sections rewritten by the song-form rules (first chord, final cadence) carry
+  the "cadence: rules" note, never an AI label.
+
+## Files and DAW
+
+- [ ] Download MIDI; import into Logic. Confirm Harmony/Bass/Drums, tempo, actual
+  meter, markers, voicings, rests, swing, muted parts and no stuck notes. MIDI carries
+  editable notes and GM/controller hints; DAW instrument sound may differ.
+- [ ] Use Open in Logic and Ableton reveal/drag. Test a missing DAW and a backend
+  error. Hosted clients must still offer MIDI download.
+- [ ] Export → **Logic Scripter script**: in Logic, MIDI FX ▸ Scripter ▸ Open Script
+  in Editor, paste, Run Script. Play the **Whole form** from bar 1 and check it stops
+  at the form's last bar; pick one **Section**, set **Start bar** and **Loop**, and
+  check only that section repeats; cycle a region; stop mid-chord (no stuck notes);
+  check 3/4 or 6/8 timing against the MIDI export and switch **Beat unit** if it
+  drifts; Transpose and the Harmony/Bass switches; incoming keyboard notes pass
+  through. See
+  [plugin/logic-scripter/README.md](../plugin/logic-scripter/README.md).
+- [ ] Export PDF with 4/8/28/29/64 bars in light, dark and current themes. Inspect
+  first cold load, all keys, slash chords, diminished/half-diminished symbols, Korean
+  titles, section boundaries and page breaks. No crop, missing glyph or work date.
+
+## Automated evidence
+
+Three review passes covered implementation, independent failure-path inspection
+and verification after the fixes:
+
+1. The first full pass completed 476 backend and 212 frontend tests, frontend
+   build and lint.
+2. Independent review found an unstarted SSE worker retaining a plan reservation
+   and the Set Chord field retaining the previous selection. The fixes are
+   [`fd2b5d8`](https://github.com/PearlLeeStudio/TheArtist-DAW/commit/fd2b5d8) and
+   [`bc0f817`](https://github.com/PearlLeeStudio/TheArtist-DAW/commit/bc0f817),
+   with focused regressions for both.
+3. The final full pass of that review round (snapshot `bc0f817`; current counts are in HACKATHON.md) completed **479 backend tests** and the app import check,
+   plus **215 frontend tests**, lint and build. The build retains the existing
+   large-chunk warning. Safari reproduced the corrected Set Chord flow by
+   selecting C in bar 1, F in bar 9 and applying F to the selected bar.
+   Documentation contracts, local links, image references and public-file contents
+   were also inspected; this does not establish untested audio or hardware behavior.
+
+The [observed workflow](#observed-workflow) records what Safari, Preview and Logic
+actually displayed. Remaining unchecked scenarios above retain their narrower
+scope: listening, MIDI hardware, GM/controller behavior, Scripter execution,
+additional layouts and edge cases. The
+[evaluation](evaluation.md) separately records real Meta request results,
+including failed PNG reading and the planner's unresolved judge decisions.

@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "core": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW.git",
     "ref": "baseline",
@@ -9,16 +9,1810 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "6ed1b50914c78c205ee7aabdde924c648caf292d"
+    "commit": "c5db19340373fc9bb56b59dcff1d6e037fb4aeee"
   },
-  "patchSha256": "f0b867027db622b083f6c584b2bb6e6b95cd7fb00ccea3866b41c56f2a5d203d",
+  "patchSha256": "93c6abf089f37e9b6e689cd8f90f46efc62e24133fedfd51b52a70c768cd0cde",
+  "materializedFiles": {
+    ".dockerignore": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    ".gitattributes": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "HACKATHON.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/annotated_music_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/compare_reharmonization.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/compare_saved_plans.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/compare_score_readers.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/export_plan_samples.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/external_eval_sources.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/listening_pack.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/listening_results.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/listening_template.html": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/plan_and_generate.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/probe_reharm_models.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/rank_reharmonization.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/real_score_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/reharm_eval_data.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/report_fixed_seed_plans.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/report_reharmonization.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "agent/run_fixed_seed_plans.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "ai/rag/omt.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "ai/rag/omt_manifest.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/mcp_server.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/plan.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/reharmonize.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/review.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/score_import.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/models/sections.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/routes/export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/routes/plan.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/routes/reharmonize.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/routes/review.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/routes/score_import.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/chord_context.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/chorus_memory.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/contracts.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/daw_launcher.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/env_flags.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/harmony_analysis.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/harmony_meta.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/key_anchor.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/limits.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/llm.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/planner.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/reharmonize.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/reharmonize_agent.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/review.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_analysis.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_assistance.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_completion.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_context.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_form.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_import.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_pdf.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/score_verification.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/scripter_export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/scripter_template.js": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/serving_readiness.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/smf_export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/app/services/theory_rag.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/__init__.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/chorus_smoke.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/experience_benchmark.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/__init__.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/chords.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/dataset.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/engines.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/metrics.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/report.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/harmony_eval/run.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/hosted_latency_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/hosted_workflow_smoke.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/import_matrix.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/inference_benchmark.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/llm_smoke.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/loading_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/plan_smoke.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/review_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/setup_omt.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/scripts/speed_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/__init__.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/fixtures/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/fixtures/notes-only.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/fixtures/score-import.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/fixtures/vector-score-c.pdf": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/fixtures/vector-score-f.pdf": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_agent_eval_requests.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_autodeploy.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_capabilities.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_chord_context.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_chords_api.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_chorus_memory.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_fixed_seed_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_generation_length.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_genre_tables_parity.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_harmony_analysis.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_harmony_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_harmony_meta.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_inference_cache.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_inference_rag_gate.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_key_anchor.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_limits.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_listening_results.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_llm.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_mcp.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_meta_composer.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_meta_credit.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_midi_bridge.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_midi_bridge_install.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_model_loading.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_physics_voicing.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_plan_api.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_planner.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_reharm_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_reharm_ranks.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_reharmonize.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_review.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_review_eval.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_analysis.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_analysis_regressions.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_assistance.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_cache.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_form.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_import.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_import_stream.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_pdf.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_reader_comparison.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_score_verification.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_scripter_export.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_section_api.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_serving_readiness.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_song_api.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_song_form.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_song_rhythm.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_song_seed.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_static_host.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_theory_rag.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_unlimited_budget.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/test_warmup_keys.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/tests/vector_score_fixture.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/theartist_client/__init__.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "backend/theartist_client/client.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/Caddyfile": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/Dockerfile": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/autodeploy.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/autodeploy.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/catalog_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/compose.yaml": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/env.example": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/pages.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/pages.test.mjs": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/runtime/pyproject.toml": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/runtime/uv.lock": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/runtime_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/serve.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/theartist-deploy.service": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/theartist-deploy.timer": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/vps.env.example": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "deploy/vps.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/architecture.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/arrangement-workflow.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/demo-subtitles.en.srt": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/demo-subtitles.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/demo-timeline.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/editor-reference.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/evaluation.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/evidence.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/manual-checks.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/mcp.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/midi-input.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/model-comparison.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/models.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/reharmonization-evaluation.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/reharmonization.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/score-analysis.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/score-reader-comparison.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/theory-retrieval.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/voyager-api.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/walkthrough.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "docs/web-projects.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/comparison.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/comparison.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/blind.html": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/chorus-blind.html": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-meta.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-rules.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/new_jazz_32-meta.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/new_jazz_32-rules.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/new_pop_32-meta.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/listening/new_pop_32-rules.mid": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1379/meta-medium.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1379/rules.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1380/meta-medium.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1380/rules.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1381/meta-medium.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1381/rules.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1382/meta-medium.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/fixed-seed/seed-1382/rules.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_bossa_f_16bar_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_country_g_16bar_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_hiphop_amin_8bar_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_jazz_f_8bar_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_pop_c_8bar_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/complete_rock_e_8bar_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_blues_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_blues_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_electronic_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_electronic_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_gospel_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_gospel_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_jazz_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_jazz_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_pop_32.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/new_pop_64.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/tight_blues_a_12bar_16_high.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/tight_blues_e_12bar_48_outro.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/tight_folk_g_14bar_16_outro.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/requests/tight_pop_c_10bar_32_high.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/results/meta-high.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/results/meta-low.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/results/meta-medium.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/results/rules.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/agent_eval/summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/external_eval/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/external_eval/four-reader-results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/external_eval/import-results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/external_eval/music-results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/external_eval/sources.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/dataset.jsonl": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-auto.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-local.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-meta.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-openweight.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-real-songs-auto.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-real-songs-local.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-real-songs-meta.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/results-real-songs-openweight.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/harmony_eval/summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/import_eval/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/import_eval/context-20.pdf": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/import_eval/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/import_eval/run.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/import_eval/vector-matrix.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/local/vector-score-c.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/local/vector-score-f.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/chorus-reuse-smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/llm_smoke_d1.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/note_harmony_first_attempt.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/note_harmony_second_attempt.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/note_harmony_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/plan_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/printed_import_review_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/reharmonize_amazing_grace.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/reharmonize_aug7_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/reharmonize_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/review_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/meta/score_import_smoke.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/calls.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f2-f3-rank-results.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f2-f3-rank-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f2-results.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f2-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f3-results.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f3-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f4-rank-results.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/f4-rank-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/followup-calls.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/local-model-probe-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/results.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonization/summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/review_eval/results-meta.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/review_eval/results-openweight.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/review_eval/summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/chorus-memory.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/chorus-memory.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/d1_after_full_length.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/d1_after_full_length.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/d1_before_full_length.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/d1_before_full_length.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/hosted_workflows.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/inference_cache.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/loading_after.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/loading_before.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/meta_after.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/meta_before.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/model_regression.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/model_regression_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/reconstruction.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/reharmonize_regression.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/runtime-performance.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/score_import.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/score_regression.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/speed/score_regression_probe.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/public/_routes.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/public/_worker.js": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/Layout.css": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/OperationProgress.css": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/OperationProgress.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/ReharmControls.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ChoiceKeyGrid.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ControllerPane.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/DrumsPane.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/InstrumentPane.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/PlayPanel.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/PlaybackStatus.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/RhythmPane.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/Transport.css": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/Transport.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/VisualPane.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/genreTag.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/paneKeys.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ui/KeyButton.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ui/Screen.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ui/StepRow.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ui/VolumeFader.css": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/ui/VolumeFader.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/RightPanel/play/usePlayStep.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ExportMenu.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ImportReviewBand.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ImportScoreDialog.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ImportedMeasureReview.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/PlanRunBand.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ReharmBand.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/ScoreContextMenu.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/SectionsDialog.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/SongFormDialog.tsx": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/importedBars.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/components/ScoreEditor/useScoreClipboard.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/audioMixer.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/audioMixer.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/chordGenerator.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/chordParser.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/chordPreview.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/chordRhythm.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/chordVocabulary.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/dawBridge.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/dawBridge.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/experienceTiming.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/experienceTiming.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/exportSpec.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/exportSpec.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/generationComparison.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/generationComparison.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/genreTables.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/genres.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/httpClient.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/httpClient.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/importRetention.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/importReview.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/importReview.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/instrumentAudio.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/instrumentAudio.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/instruments.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/keySignatures.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/keySignatures.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/manualChordDraft.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/metaSession.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/metaSession.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/midiBridge.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/midiBridge.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/midiCaptureState.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/midiCaptureState.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/midiInput.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/mixer.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/pdf.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/pdfLayout.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/pdfLayout.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/planClient.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/planClient.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/playSettings.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/playSettings.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/playbackStatus.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/reharmContext.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/reharmonize.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/reharmonize.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/reharmonizeSession.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/romanNumeral.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreClipboard.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreClipboard.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreImport.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreImport.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreImportClient.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreImportClient.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreImportEvidence.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreLayout.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreShortcuts.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreShortcuts.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreStaveLayout.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/scoreStaveLayout.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/songForm.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/songForm.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/songTranspose.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/songTranspose.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/sseStream.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/engine/voicingEngine.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/generationStore.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/importCleanupStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/importReviewStore.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/importReviewStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/newSong.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/planStore.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/planStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/playMuteState.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/playMuteState.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/playStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/reharmonizeStore.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/reharmonizeStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/reviewStore.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/reviewStore.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/sessionStorage.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/songRetention.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "frontend/src/store/songStore.clipboard.test.ts": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "plugin/logic-scripter/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "plugin/logic-scripter/example/theartist_chords.example.js": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "plugin/logic-scripter/test/scripter-host.mjs": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "plugin/logic-scripter/test/theartist_chords.test.mjs": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/01-main-light.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/02-main-dark.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/03-generate.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/04-voicing.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/05-voicing-dark.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/06-midi.png": {
+      "mode": "100644",
+      "replacesCore": true
+    },
+    "screenshot/07-controller.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/08-projects-export.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/09-logic-handoff.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/10-pdf-export.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/11-import-context.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/12-import-use-meta.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "screenshot/13-reharmonize-alternatives.png": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "scripts/bootstrap_submission.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "scripts/build_submission.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "scripts/submission_README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "scripts/verify_reconstruction.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "tools/midi-bridge/.gitignore": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "tools/midi-bridge/CoreMidiInput.swift": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "tools/midi-bridge/bridge.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "tools/midi-bridge/run.py": {
+      "mode": "100644",
+      "replacesCore": false
+    }
+  },
   "files": {
     ".dockerignore": "dd1a6e9a716bca2e49d4ab873eda08299b9484b4d9c2fa428264a801d9c1be69",
     ".gitattributes": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "8673380e1e3e7130504c5418c1350c8a2d1d1f9bc0f407c61d56e5e875a01761",
-    "README.md": "23b537e88e76d7d14bfa5d64220ece0fd09fe8ee7dd0c6dd0aee29e4747cb0b0",
+    "HACKATHON.md": "24ee31b07c9390e4e2fee2e8077b457fe8fe67ff761ed6d1b9cd5f231ac4ae29",
+    "README.md": "55596eb931ff193bb8d6225c6427bcc3ada4a717319eab6593fa344626ba8379",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "065a8ecf0f26dad35cb7bbff1ada0dd0da1bdc245f83265d156ccce1eb97fadb",
@@ -42,7 +1836,7 @@
     "ai/rag/omt.py": "0166ccad79e2b1c3678fa357e459cffc5429e025585f4759e2943e4d6246fc90",
     "ai/rag/omt_manifest.json": "cc6a61d0498b8b07385d7299484cd650dd0f2c1c5bc594583f25dfb2d6239f0a",
     "ai/training/model.py": "061524d8d222dfb561418881fddbe93edaf414a57bbef5c07a8ccf5539f6a7c3",
-    "backend/README.md": "dcc797a78d5a6cc2742e71372e0cef81230167c3cbcffacb934d4e2c3bbcf72f",
+    "backend/README.md": "bed4ec04fc56c87e96a4057f5a5d7658501aa8fb6f015c821dc78f912016378e",
     "backend/app/main.py": "b202422e95cfe100851b623ed3f52bbc51904769b0c9bdee6e374a5339508056",
     "backend/app/mcp_server.py": "bda4f57e5c80ff01060cf13fccd7202ae9c6b028edcb86643b270184cbc5ebc8",
     "backend/app/models/export.py": "3420962abb3655b4e2f8bd89c1b09ca36b40c91e44e65a1b98780e59b39e80cf",
@@ -181,7 +1975,7 @@
     "backend/uv.lock": "44f0cc54d799e4f54790fa216495f84fa7f38494197b0a0febf188c4e36a054a",
     "deploy/Caddyfile": "ae48ce9bb34f358db4510363b04b20f2059bdd4311e4a7e30634a7a3bc292b86",
     "deploy/Dockerfile": "5a88eb10e9d916fafea832804da4735cb44bc8f4204c23914442e4c22749312e",
-    "deploy/README.md": "d8f5595736a9d26c4baad89d914e06d68a93b6235e52f539c4e74ef879e36ab1",
+    "deploy/README.md": "34c067fc8cb9fe6294bcd703a0ab3352d25fc24a3fc29ae7cc2b7997c908c4f5",
     "deploy/autodeploy.md": "03214fb3e91a46e935eee6046824eac0c56e5dfa9513621cc20256f796916579",
     "deploy/autodeploy.py": "9bc64b6d4b0c234c22692beaf5ebe39490c54332de1fff519546fc1591b06d51",
     "deploy/catalog_probe.py": "669541b28b082053d4edae7c155319d01bf82aad5f87c070894dd4baddad0d20",
@@ -197,28 +1991,28 @@
     "deploy/theartist-deploy.timer": "8bd5733caed6c84da761cc597df3cd9dfae3680c015ff6818f5ab15ea31ebd6b",
     "deploy/vps.env.example": "dacaa6b50084e0c31358f024699da390e736daa938a7dc998baacdd96fb8e2a7",
     "deploy/vps.md": "3ef576b4f22f6234b8efc4b93651d8c281a7a6f4e5eeb19d63e62c67be71b1ac",
-    "docs/README.md": "560f06b7287ca177b39829a7b8ab1942abacb930317d20099b9b87941e843eab",
-    "docs/architecture.md": "f4caa3999d358695c1205de6a6725345d3b339fa3ed195298db0cef3135f66a9",
+    "docs/README.md": "fa6f90d1f9dfa5b88e884d27a3d8b0f99e186e713757c54f4c087e7401021a0d",
+    "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
     "docs/arrangement-workflow.md": "884e6cae97d5951b2577a99ec23ff31df40c4658d1e5d51aaf8cd058d724bf5e",
     "docs/demo-subtitles.en.srt": "ada212145d3b2341695271dd90c18c583b1fcb48b244a8b7ab65072851032bb9",
-    "docs/demo-subtitles.md": "bb164246a5a904df7fd059afb71b11087de44a2ce47f49107fa6bfa84c3fe347",
+    "docs/demo-subtitles.md": "8014e2d9fa61f21777e57652d80c5c3d1ad6356542a7257d62072e80ef590a16",
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
-    "docs/editor-reference.md": "80d7bb8848b7f60c97893c50212f6ddc62d4633b51d8d386770677119410f297",
+    "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "1f8e2eab85b42f2b24ca7a97a3c1e12711ae75a79382c130421865628b46ece7",
+    "docs/evidence.md": "64235b86fd19cb88e3db3515c7b42b018feba2343d0a0f41a31efe217cfb24a9",
     "docs/manual-checks.md": "34485859f4fe09f13ae8c8e2b24f95610849fa41daa60aa5d125703500560450",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
     "docs/model-comparison.md": "d2b00dacf73ae83c83ace4a0e13418768381e184cee63913a3b1971aa1ca5c2e",
-    "docs/models.md": "6ceecbdd76bd4df92f5800c76819c908a65a7a90b75f6a4c5743b6ddc88f76be",
-    "docs/reharmonization-evaluation.md": "e7433a51e6ada7501f196b3a15abea09ec962f0840e57040081157c5f1af2444",
+    "docs/models.md": "913e0f50f399330619af700bfbdade8d4c0a231c2af4d423bbd34631e2a8f800",
+    "docs/reharmonization-evaluation.md": "d355f95a3d9c81c20854fd03b49384d028b1323b9d60a7ae79b6324bd524c5da",
     "docs/reharmonization.md": "9f26a4278c0439cf463f73203cf508b9df184df98ad0f06a60c5872f7d8197e2",
     "docs/score-analysis.md": "dc1606afd70d6c0b0100e93c48ad3e494a1a8b1b8a4b7da6d66088e56eec4ff0",
     "docs/score-reader-comparison.md": "7406933fdd1521502dd756771dbd29f85ec537d2fd3ca2c4f6380fc112baf854",
     "docs/theory-retrieval.md": "f53e1d4d214740631831fc1728b59da5e752af09f5863b19c4ffab235f18f991",
-    "docs/voyager-api.md": "0e2948eda2ba983195277ca4d130bccad4482d4a5acb0d61ac1a786c93690f57",
+    "docs/voyager-api.md": "7421f435eadbd89cfb9efa2dffb35454e2cf9fa48fe7059c49b611e7759d83d2",
     "docs/walkthrough.md": "b016e636fa9b7aa181d3dce96b3c7bdd7d85fbf8241b89591ffb1e39695e3b10",
-    "docs/web-projects.md": "9fdefb9d9e8b865a97e216a69522980331105f12f39a7f9fbb5643f3baf8b295",
+    "docs/web-projects.md": "7a03a605b64898f2fa29a85b2e89c93748752bd418ce7b513cf87b0685b6c311",
     "experiments/agent_eval/README.md": "94138223a11612d23094fc7056bc9a83f3669b72f47a1d8842d056cc3ae18041",
     "experiments/agent_eval/comparison.md": "02e09ca0093e548921ee50848ad73314335592d089968185e8216bf34ec35de5",
     "experiments/agent_eval/fixed-seed/README.md": "b32520fe2682e617cd5a166a3cc3009a47eceab1895df596af14717cc0a2362f",
@@ -520,9 +2314,9 @@
     "screenshot/11-import-context.png": "389d3ace2bf2b3590b71522d9a86bfb7f15d98c3de95ab0defd4b4ca63ad73c3",
     "screenshot/12-import-use-meta.png": "8bd142f93b0ce1eb5244d9eb520ee7c56baaff6e91fe14d57014b2ee0e0b8699",
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
-    "scripts/bootstrap_submission.py": "23c22ae3ae24b2e96cb8157ae4f17ec6d7be21a3d56ef54db577f06fb61e3013",
-    "scripts/build_submission.py": "7ef2c000493b62dc8c02845bae39d5fb72acc67c210c3b095765e5abe25f5643",
-    "scripts/submission_README.md": "a3f965e11287216f5c2f17611987e108e946de5c3e1cf11ff384e5b759b5a9bf",
+    "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
+    "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
+    "scripts/submission_README.md": "e53abd00bbd1cb1f579e3aca7d91e2280c41ccaa08d65455f758de7280bbc337",
     "scripts/verify_reconstruction.py": "554aa473e8d3efa39b15e8cbda951df540fc05ddba1f76cf43ab288b00682771",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",
