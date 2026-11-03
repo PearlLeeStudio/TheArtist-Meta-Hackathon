@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "c661aab2971e8dee97fafc154bd03d457c730809"
+    "commit": "19ac751d3ce56e6c201d30fa0a34cce6601fc0a2"
   },
-  "patchSha256": "3c9f895399313b4257bbf5c2b1cbab844fda1b0adce24192091281b38eba3e03",
+  "patchSha256": "121db0aaf38a3ee20a0b174f8eded283ad0e191f87bc0935593bf3d12481d6aa",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1081,6 +1081,10 @@
       "mode": "100644",
       "replacesCore": false
     },
+    "experiments/meta/reharmonize_open_weights_live.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
     "experiments/meta/reharmonize_smoke.json": {
       "mode": "100644",
       "replacesCore": false
@@ -1824,8 +1828,8 @@
     ".github/workflows/verify-submission.yml": "2904842f882a7060eb72ae44cc71ba90b3826afbd7d34b45cc2e8b3349628b6e",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "660f44a160a57b5731c49d6475a1be624227c69ec1d83f4b78e7e36e22e686dc",
-    "README.md": "84bd5a87ebae55b6f3bd99c143629c9b87c4d4c3448d2ce00db455418e7f2ffd",
+    "HACKATHON.md": "09e22d0f520827e3c94b384cf56cd1ae9bb64e52f0873fc695f6f3e0bdd34479",
+    "README.md": "ca250e22a001b2172d42cf277058f101d90e74d7e3805bd3d3bb0fa97097d6aa",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "cd30522f5f5b1396e1e0e067690df0f01a31e26539fab078682868d7d0b27db7",
@@ -2005,7 +2009,7 @@
     "deploy/vps.env.example": "dacaa6b50084e0c31358f024699da390e736daa938a7dc998baacdd96fb8e2a7",
     "deploy/vps.md": "3ef576b4f22f6234b8efc4b93651d8c281a7a6f4e5eeb19d63e62c67be71b1ac",
     "docs/README.md": "81f9f975b9d448ec9f8d7a2db6a0ad097c4b77c2fa4e6808c7be889ba6a2e910",
-    "docs/agents.md": "a0e6b78060bda809135d3a2fcdff27dea874c33c99e452502dda457aede92ff2",
+    "docs/agents.md": "2f39e16ce0cc75961a474c1f7d81f86ed205054b4d72a34435181d26ae63a65c",
     "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
     "docs/arrangement-workflow.md": "f2700a9eb25f79e6570cb0545d7c8a2479f9322deb4d5508933d14b5a09fd546",
     "docs/demo-subtitles.en.srt": "ada212145d3b2341695271dd90c18c583b1fcb48b244a8b7ab65072851032bb9",
@@ -2013,15 +2017,15 @@
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
     "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "6ca4ea279b05eac97f06a7754107e0b4e53b15e0fe860aa838304470c685abc9",
+    "docs/evidence.md": "aeb98af55d7359a8209fe779a98396b14134daee2bbca32062a2af5663ea16b2",
     "docs/manual-checks.md": "0e26b86aff9a8f52dee352da43710950ffc34488e821a4007298e69fcb6aeef3",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
     "docs/model-comparison.md": "647ccd86cc66040e2311d480bb25726b0846497823984b19e822b41a2ab310d0",
     "docs/models.md": "913e0f50f399330619af700bfbdade8d4c0a231c2af4d423bbd34631e2a8f800",
-    "docs/open-weights.md": "2da94f38bb405788629401070625e647a1135441d94b4524a323a30136c296da",
+    "docs/open-weights.md": "d0df4453c863f4333dde297d8802fb92eabad022217bba0e72e4e21eed651a7b",
     "docs/reharmonization-evaluation.md": "d355f95a3d9c81c20854fd03b49384d028b1323b9d60a7ae79b6324bd524c5da",
-    "docs/reharmonization.md": "be410bea40facad7aedddbaa1c6de785458d48c0e445eb097c837ecbc95ee989",
+    "docs/reharmonization.md": "5d2f568c1ab053e285c0452035548c7a49b0f13250d62c29920b0a7712d3022f",
     "docs/score-analysis.md": "dc1606afd70d6c0b0100e93c48ad3e494a1a8b1b8a4b7da6d66088e56eec4ff0",
     "docs/score-reader-comparison.md": "7406933fdd1521502dd756771dbd29f85ec537d2fd3ca2c4f6380fc112baf854",
     "docs/theory-retrieval.md": "f53e1d4d214740631831fc1728b59da5e752af09f5863b19c4ffab235f18f991",
@@ -2106,6 +2110,7 @@
     "experiments/meta/printed_import_review_smoke.json": "d1c508cf3a005376a9be78b55d45abfc6093a1da588464a7fa5eba9fc635a2a7",
     "experiments/meta/reharmonize_amazing_grace.json": "73859a51010a0a5cb228c3bd088253366d45723df2c69c2ca5dbd15f01685374",
     "experiments/meta/reharmonize_aug7_smoke.json": "dfeb6d3a5c369bf92ce684b313289045055b7ccf701c5d75d594739e5eb37e35",
+    "experiments/meta/reharmonize_open_weights_live.json": "de23829da752ae1555f0d68ede5d6c35a9515b85c548d66ac9e7aece1217c12e",
     "experiments/meta/reharmonize_smoke.json": "830aa920efa1a6ddbf96e8679823c31ee8dcfecb90807b406d5dfbb9ecdc2a43",
     "experiments/meta/review_smoke.json": "e2a88b31cbcfd6e4986f48371f759cdce01d67e0a53d1f4da84f13136db10fab",
     "experiments/meta/score_import_smoke.json": "3b3ed53b7cc0f48d0be0e4692595530eb13714a66a5135d221a87073c211f593",
@@ -2331,7 +2336,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "4846aa6a8a0e9d6a2d3a310ea4b5a6567117c4f6dc61a87365697ef27ef7e3c2",
+    "scripts/submission_README.md": "40bed5f5b0534e1ebf5da618539afe38389f9ea6cc3192edcc02a84d061ccadd",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",
