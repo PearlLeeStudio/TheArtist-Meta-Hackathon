@@ -1133,10 +1133,10 @@ index 97edb1d37fe17c42eb3c498b57f6920b0059d6e7..78811241e83272d48c831f539c4a2616
  
  The rule-based generator remains the fallback when torch or the chosen checkpoint is unavailable.
 diff --git a/README.md b/README.md
-index 285a07505615110c0e9dd8ca1c7102473cd8d618..5e2cd1e0cd2ba6e388e22e4b2ec2aa8f799db77b 100644
+index 285a07505615110c0e9dd8ca1c7102473cd8d618..a1647806caf97d957a8ba6470ac8bde52bc14553 100644
 --- a/README.md
 +++ b/README.md
-@@ -1,539 +1,765 @@
+@@ -1,539 +1,773 @@
  <h1 align="center">TheArtist</h1>
  
  <p align="center">
@@ -1336,7 +1336,15 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..5e2cd1e0cd2ba6e388e22e4b2ec2aa8f
 +
 +**Who it is for.** Musicians who already have a song on paper (a lead sheet or a chord chart)
 +and want to hear harmonic options and take playable parts into their DAW: arrangers, band
-+leaders, accompanists and students. TheArtist keeps their source material and
++leaders, accompanists and students. Producers mostly want assistive AI rather than generated
++songs: in Tracklib's 2025 survey of 1,734 producers, 6% used generative tools regularly and 82%
++opposed full-song generation from text prompts
++([MusicTech](https://musictech.com/news/industry/music-producers-are-rejecting-ai-study-reveals-over-80-of-producers-are-against-ai-generated-songs)).
++TheArtist keeps the musician's score and choices and hands over editable MIDI, not finished audio.
++Each piece exists elsewhere: Logic's Session Players follow a chord track, Scaler 3 suggests
++substitutions from MIDI or audio, and Band-in-a-Box has arranged typed chords for decades. What is
++new here is the chain from the printed score to contextual alternatives the musician chooses, a
++completed form and editable parts in the DAW. TheArtist keeps their source material and
 +editing decisions connected: printed score → contextual harmonic alternatives →
 +song form → accompaniment → editable MIDI. The musician can audition, combine,
 +apply and undo proposals before continuing production in a DAW.
@@ -2355,7 +2363,7 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..5e2cd1e0cd2ba6e388e22e4b2ec2aa8f
  
  ## Research
  
-@@ -563,17 +789,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
+@@ -563,17 +797,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
  
  ## Not in this repository
  

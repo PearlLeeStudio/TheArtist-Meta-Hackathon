@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "e714f10a0b4a9437d932f7b5df16a7d3b481862c"
+    "commit": "9dbb486331d11dccda3836d440afae69fec7205f"
   },
-  "patchSha256": "a1b92e62a269a76a9730ee8e19b5fd45dde78c40f22cf0d81fc0278c26cd11ef",
+  "patchSha256": "db4891b54566df68c50167aa4eeadb9f4efdf88525febe6db0247708823a7504",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1825,7 +1825,7 @@
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
     "HACKATHON.md": "fa733ed8ac7cfdb48c0a75519b0cb56e1926f1a1d1b7daea2a90d56c7659f219",
-    "README.md": "d8a1857b69e5af0f9f3e5e60c737ad05671702b398cde22f6fbc3c2f08fc119e",
+    "README.md": "d236348e196e62029598ce834f9c213632edf0e040134d42a834b0e8f2d97ddf",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "065a8ecf0f26dad35cb7bbff1ada0dd0da1bdc245f83265d156ccce1eb97fadb",
@@ -2331,7 +2331,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "504d47aef9e8ff2b0759b74fd7524a88fa478c119d534664f45d9133a12356d4",
+    "scripts/submission_README.md": "5718972de91264f4fc43981d4b124aaddfbc0870635b11b80c69d3b99b636db9",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",
