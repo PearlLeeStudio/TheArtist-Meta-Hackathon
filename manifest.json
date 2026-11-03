@@ -9,7 +9,7 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "fadbdbdeceeaa6abc8eecbf859f1ed86e0f7235b"
+    "commit": "867fbc42ee67dad90924b075faf13b6d063b6903"
   },
   "patchSha256": "90bd2152104b5ade2c61bfcbad3dc5fa3172764b6bdecbad12333108e1ba2b69",
   "materializedFiles": {
@@ -18,6 +18,10 @@
       "replacesCore": false
     },
     ".gitattributes": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    ".github/workflows/verify-submission.yml": {
       "mode": "100644",
       "replacesCore": false
     },
@@ -1809,6 +1813,7 @@
   "files": {
     ".dockerignore": "dd1a6e9a716bca2e49d4ab873eda08299b9484b4d9c2fa428264a801d9c1be69",
     ".gitattributes": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b",
+    ".github/workflows/verify-submission.yml": "2904842f882a7060eb72ae44cc71ba90b3826afbd7d34b45cc2e8b3349628b6e",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
     "HACKATHON.md": "13cb16053e6666ae0552240bce36ed051b4048737407af8a8f0dc74dfbd76344",
@@ -2317,7 +2322,7 @@
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
     "scripts/submission_README.md": "e53abd00bbd1cb1f579e3aca7d91e2280c41ccaa08d65455f758de7280bbc337",
-    "scripts/verify_reconstruction.py": "554aa473e8d3efa39b15e8cbda951df540fc05ddba1f76cf43ab288b00682771",
+    "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",
     "tools/midi-bridge/bridge.py": "3b13a9f848ea066bd7540740215fb92242e17846f12e13af03f4df89f91fa27d",

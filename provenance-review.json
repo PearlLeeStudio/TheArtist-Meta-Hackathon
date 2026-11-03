@@ -12,6 +12,11 @@
       "candidates": []
     },
     {
+      "path": ".github/workflows/verify-submission.yml",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
       "path": "HACKATHON.md",
       "delivery": "file",
       "candidates": []
