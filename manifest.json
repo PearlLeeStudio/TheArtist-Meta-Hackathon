@@ -9,7 +9,7 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "f994e77dfa4e996b3d18bf33ead20cda07e146bf"
+    "commit": "f1cf99d11f82215f50319b4a358a958e06fc726d"
   },
   "patchSha256": "ff80adca68f1efc1d15a4af8fa549500df89baa0a2c6615c4484fac64add0dc7",
   "materializedFiles": {
@@ -1816,7 +1816,7 @@
     ".github/workflows/verify-submission.yml": "2904842f882a7060eb72ae44cc71ba90b3826afbd7d34b45cc2e8b3349628b6e",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "13cb16053e6666ae0552240bce36ed051b4048737407af8a8f0dc74dfbd76344",
+    "HACKATHON.md": "fa733ed8ac7cfdb48c0a75519b0cb56e1926f1a1d1b7daea2a90d56c7659f219",
     "README.md": "4568afa85fc09157b718dce8727ce399114a4d5b0f0f0e26827ced8ac8083608",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
@@ -1980,7 +1980,7 @@
     "backend/uv.lock": "44f0cc54d799e4f54790fa216495f84fa7f38494197b0a0febf188c4e36a054a",
     "deploy/Caddyfile": "ae48ce9bb34f358db4510363b04b20f2059bdd4311e4a7e30634a7a3bc292b86",
     "deploy/Dockerfile": "5a88eb10e9d916fafea832804da4735cb44bc8f4204c23914442e4c22749312e",
-    "deploy/README.md": "34c067fc8cb9fe6294bcd703a0ab3352d25fc24a3fc29ae7cc2b7997c908c4f5",
+    "deploy/README.md": "f7e2832daddd33e7f356d8ccf677678844723368d25124c17d9cfd588663a9db",
     "deploy/autodeploy.md": "03214fb3e91a46e935eee6046824eac0c56e5dfa9513621cc20256f796916579",
     "deploy/autodeploy.py": "9bc64b6d4b0c234c22692beaf5ebe39490c54332de1fff519546fc1591b06d51",
     "deploy/catalog_probe.py": "669541b28b082053d4edae7c155319d01bf82aad5f87c070894dd4baddad0d20",
@@ -1998,7 +1998,7 @@
     "deploy/vps.md": "3ef576b4f22f6234b8efc4b93651d8c281a7a6f4e5eeb19d63e62c67be71b1ac",
     "docs/README.md": "fa6f90d1f9dfa5b88e884d27a3d8b0f99e186e713757c54f4c087e7401021a0d",
     "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
-    "docs/arrangement-workflow.md": "884e6cae97d5951b2577a99ec23ff31df40c4658d1e5d51aaf8cd058d724bf5e",
+    "docs/arrangement-workflow.md": "f2700a9eb25f79e6570cb0545d7c8a2479f9322deb4d5508933d14b5a09fd546",
     "docs/demo-subtitles.en.srt": "ada212145d3b2341695271dd90c18c583b1fcb48b244a8b7ab65072851032bb9",
     "docs/demo-subtitles.md": "598967999b3240268e89fc35f9ae1ba17b0127993bfa1314d9a171c5379cbac3",
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
