@@ -1,0 +1,1907 @@
+{
+  "method": "Exact bytes and normalized three-line blocks; manual review remains required. A git-added file can contain pre-event code. All such files remain patch deltas, not claimed new assets.",
+  "addedFiles": [
+    {
+      "path": ".dockerignore",
+      "candidates": []
+    },
+    {
+      "path": ".gitattributes",
+      "candidates": []
+    },
+    {
+      "path": "HACKATHON.md",
+      "candidates": []
+    },
+    {
+      "path": "agent/README.md",
+      "candidates": []
+    },
+    {
+      "path": "agent/annotated_music_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/compare_reharmonization.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/compare_saved_plans.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/compare_score_readers.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/export_plan_samples.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/external_eval_sources.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/listening_pack.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/listening_results.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/listening_template.html",
+      "candidates": []
+    },
+    {
+      "path": "agent/plan_and_generate.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/probe_reharm_models.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/rank_reharmonization.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/real_score_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/reharm_eval_data.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/report_fixed_seed_plans.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/report_reharmonization.py",
+      "candidates": []
+    },
+    {
+      "path": "agent/run_fixed_seed_plans.py",
+      "candidates": []
+    },
+    {
+      "path": "ai/rag/omt.py",
+      "candidates": []
+    },
+    {
+      "path": "ai/rag/omt_manifest.json",
+      "candidates": []
+    },
+    {
+      "path": "backend/README.md",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/mcp_server.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/plan.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/reharmonize.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/review.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/score_import.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/models/sections.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/routes/export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/routes/plan.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/routes/reharmonize.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/routes/review.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/routes/score_import.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/chord_context.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/chorus_memory.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/contracts.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/daw_launcher.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/env_flags.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/harmony_analysis.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/harmony_meta.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/key_anchor.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/limits.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/llm.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/planner.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/reharmonize.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/reharmonize_agent.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/review.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_analysis.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_assistance.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_completion.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_context.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_form.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_import.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_pdf.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/score_verification.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/scripter_export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/scripter_template.js",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/serving_readiness.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/smf_export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/app/services/theory_rag.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/__init__.py",
+      "candidates": [
+        {
+          "path": "backend/app/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/models/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/routes/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/services/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        }
+      ]
+    },
+    {
+      "path": "backend/scripts/chorus_smoke.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/experience_benchmark.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/__init__.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/chords.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/dataset.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/engines.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/metrics.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/report.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/harmony_eval/run.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/hosted_latency_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/hosted_workflow_smoke.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/import_matrix.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/inference_benchmark.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/llm_smoke.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/loading_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/plan_smoke.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/review_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/setup_omt.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/scripts/speed_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/__init__.py",
+      "candidates": [
+        {
+          "path": "backend/app/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/models/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/routes/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        },
+        {
+          "path": "backend/app/services/__init__.py",
+          "exact": true,
+          "sharedBlocks": 0,
+          "addedFileBlocks": 0
+        }
+      ]
+    },
+    {
+      "path": "backend/tests/fixtures/README.md",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/fixtures/notes-only.png",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/fixtures/score-import.png",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/fixtures/vector-score-c.pdf",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/fixtures/vector-score-f.pdf",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_agent_eval_requests.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_autodeploy.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_capabilities.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_chord_context.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_chords_api.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_chorus_memory.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_fixed_seed_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_generation_length.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_genre_tables_parity.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_harmony_analysis.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_harmony_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_harmony_meta.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_inference_cache.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_inference_rag_gate.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_key_anchor.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_limits.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_listening_results.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_llm.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_mcp.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_meta_composer.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_meta_credit.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_midi_bridge.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_midi_bridge_install.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_model_loading.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_physics_voicing.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_plan_api.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_planner.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_reharm_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_reharm_ranks.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_reharmonize.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_review.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_review_eval.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_analysis.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_analysis_regressions.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_assistance.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_cache.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_form.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_import.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_import_stream.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_pdf.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_reader_comparison.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_score_verification.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_scripter_export.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_section_api.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_serving_readiness.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_song_api.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_song_form.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_song_rhythm.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_song_seed.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_static_host.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_theory_rag.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_unlimited_budget.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/test_warmup_keys.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/tests/vector_score_fixture.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/theartist_client/__init__.py",
+      "candidates": []
+    },
+    {
+      "path": "backend/theartist_client/client.py",
+      "candidates": []
+    },
+    {
+      "path": "deploy/Caddyfile",
+      "candidates": []
+    },
+    {
+      "path": "deploy/Dockerfile",
+      "candidates": []
+    },
+    {
+      "path": "deploy/README.md",
+      "candidates": []
+    },
+    {
+      "path": "deploy/autodeploy.md",
+      "candidates": []
+    },
+    {
+      "path": "deploy/autodeploy.py",
+      "candidates": []
+    },
+    {
+      "path": "deploy/catalog_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "deploy/compose.yaml",
+      "candidates": []
+    },
+    {
+      "path": "deploy/env.example",
+      "candidates": []
+    },
+    {
+      "path": "deploy/pages.md",
+      "candidates": []
+    },
+    {
+      "path": "deploy/pages.test.mjs",
+      "candidates": []
+    },
+    {
+      "path": "deploy/runtime/pyproject.toml",
+      "candidates": []
+    },
+    {
+      "path": "deploy/runtime/uv.lock",
+      "candidates": [
+        {
+          "path": "ai/uv.lock",
+          "exact": false,
+          "sharedBlocks": 344,
+          "addedFileBlocks": 995
+        },
+        {
+          "path": "backend/uv.lock",
+          "exact": false,
+          "sharedBlocks": 335,
+          "addedFileBlocks": 995
+        }
+      ]
+    },
+    {
+      "path": "deploy/runtime_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "deploy/serve.py",
+      "candidates": []
+    },
+    {
+      "path": "deploy/theartist-deploy.service",
+      "candidates": []
+    },
+    {
+      "path": "deploy/theartist-deploy.timer",
+      "candidates": []
+    },
+    {
+      "path": "deploy/vps.env.example",
+      "candidates": []
+    },
+    {
+      "path": "deploy/vps.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/README.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/architecture.md",
+      "candidates": [
+        {
+          "path": "README.md",
+          "exact": false,
+          "sharedBlocks": 32,
+          "addedFileBlocks": 142
+        }
+      ]
+    },
+    {
+      "path": "docs/arrangement-workflow.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/demo-subtitles.en.srt",
+      "candidates": []
+    },
+    {
+      "path": "docs/demo-subtitles.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/demo-timeline.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/editor-reference.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/evaluation.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/evidence.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/manual-checks.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/mcp.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/midi-input.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/model-comparison.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/models.md",
+      "candidates": [
+        {
+          "path": "README.md",
+          "exact": false,
+          "sharedBlocks": 19,
+          "addedFileBlocks": 58
+        }
+      ]
+    },
+    {
+      "path": "docs/reharmonization-evaluation.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/reharmonization.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/score-analysis.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/score-reader-comparison.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/theory-retrieval.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/voyager-api.md",
+      "candidates": [
+        {
+          "path": "README.md",
+          "exact": false,
+          "sharedBlocks": 43,
+          "addedFileBlocks": 70
+        }
+      ]
+    },
+    {
+      "path": "docs/walkthrough.md",
+      "candidates": []
+    },
+    {
+      "path": "docs/web-projects.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/comparison.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/comparison.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/blind.html",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/chorus-blind.html",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-meta.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/complete_hiphop_amin_8bar_32-rules.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/new_jazz_32-meta.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/new_jazz_32-rules.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/new_pop_32-meta.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/listening/new_pop_32-rules.mid",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1379/meta-medium.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1379/rules.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1380/meta-medium.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1380/rules.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1381/meta-medium.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1381/rules.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1382/meta-medium.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/fixed-seed/seed-1382/rules.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_bossa_f_16bar_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_country_g_16bar_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_hiphop_amin_8bar_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_jazz_f_8bar_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_pop_c_8bar_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/complete_rock_e_8bar_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_blues_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_blues_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_electronic_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_electronic_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_gospel_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_gospel_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_jazz_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_jazz_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_pop_32.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/new_pop_64.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/tight_blues_a_12bar_16_high.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/tight_blues_e_12bar_48_outro.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/tight_folk_g_14bar_16_outro.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/requests/tight_pop_c_10bar_32_high.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/results/meta-high.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/results/meta-low.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/results/meta-medium.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/results/rules.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/agent_eval/summary.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/external_eval/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/external_eval/four-reader-results.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/external_eval/import-results.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/external_eval/music-results.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/external_eval/sources.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/dataset.jsonl",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-auto.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-local.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-meta.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-openweight.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-real-songs-auto.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-real-songs-local.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-real-songs-meta.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/results-real-songs-openweight.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/harmony_eval/summary.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/import_eval/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/import_eval/context-20.pdf",
+      "candidates": []
+    },
+    {
+      "path": "experiments/import_eval/results.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/import_eval/run.py",
+      "candidates": []
+    },
+    {
+      "path": "experiments/import_eval/vector-matrix.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/local/vector-score-c.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/local/vector-score-f.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/chorus-reuse-smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/llm_smoke_d1.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/note_harmony_first_attempt.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/note_harmony_second_attempt.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/note_harmony_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/plan_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/printed_import_review_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/reharmonize_amazing_grace.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/reharmonize_aug7_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/reharmonize_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/review_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/meta/score_import_smoke.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/README.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/calls.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f2-f3-rank-results.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f2-f3-rank-summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f2-results.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f2-summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f3-results.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f3-summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f4-rank-results.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/f4-rank-summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/followup-calls.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/local-model-probe-summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/results.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonization/summary.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/review_eval/results-meta.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/review_eval/results-openweight.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/review_eval/summary.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/chorus-memory.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/chorus-memory.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/d1_after_full_length.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/d1_after_full_length.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/d1_before_full_length.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/d1_before_full_length.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/hosted_workflows.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/inference_cache.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/loading_after.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/loading_before.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/meta_after.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/meta_before.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/model_regression.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/model_regression_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/reconstruction.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/reharmonize_regression.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/runtime-performance.md",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/score_import.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/score_regression.json",
+      "candidates": []
+    },
+    {
+      "path": "experiments/speed/score_regression_probe.py",
+      "candidates": []
+    },
+    {
+      "path": "frontend/public/_routes.json",
+      "candidates": []
+    },
+    {
+      "path": "frontend/public/_worker.js",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/Layout.css",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/OperationProgress.css",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/OperationProgress.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/ReharmControls.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ChoiceKeyGrid.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ControllerPane.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/DrumsPane.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/InstrumentPane.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/PlayPanel.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/PlaybackStatus.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/RhythmPane.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/Transport.css",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/Transport.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/VisualPane.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/genreTag.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/paneKeys.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ui/KeyButton.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ui/Screen.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ui/StepRow.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ui/VolumeFader.css",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/ui/VolumeFader.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/RightPanel/play/usePlayStep.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ExportMenu.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ImportReviewBand.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ImportScoreDialog.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ImportedMeasureReview.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/PlanRunBand.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ReharmBand.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/ScoreContextMenu.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/SectionsDialog.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/SongFormDialog.tsx",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/importedBars.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/scoreSurface.ts",
+      "candidates": [
+        {
+          "path": "frontend/src/components/MyPage/SessionStaff.tsx",
+          "exact": false,
+          "sharedBlocks": 11,
+          "addedFileBlocks": 41
+        },
+        {
+          "path": "frontend/src/components/ScoreEditor/Staff.tsx",
+          "exact": false,
+          "sharedBlocks": 11,
+          "addedFileBlocks": 41
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/components/ScoreEditor/useScoreClipboard.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/audioMixer.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/audioMixer.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/chordGenerator.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/chordParser.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/chordPreview.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/chordRhythm.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/chordVocabulary.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/dawBridge.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/dawBridge.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/drumPatterns.ts",
+      "candidates": [
+        {
+          "path": "frontend/src/engine/drums.ts",
+          "exact": false,
+          "sharedBlocks": 117,
+          "addedFileBlocks": 195
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/engine/experienceTiming.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/experienceTiming.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/exportSpec.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/exportSpec.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/generationComparison.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/generationComparison.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/genreTables.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/genres.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/genres.ts",
+      "candidates": [
+        {
+          "path": "frontend/src/components/RightPanel/SongSettings.tsx",
+          "exact": false,
+          "sharedBlocks": 14,
+          "addedFileBlocks": 37
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/engine/httpClient.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/httpClient.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/importRetention.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/importReview.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/importReview.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/instrumentAudio.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/instrumentAudio.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/instruments.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/keySignatures.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/keySignatures.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/manualChordDraft.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/manualChordDraft.ts",
+      "candidates": [
+        {
+          "path": "frontend/src/components/RightPanel/ChordActions.tsx",
+          "exact": false,
+          "sharedBlocks": 12,
+          "addedFileBlocks": 47
+        }
+      ]
+    },
+    {
+      "path": "frontend/src/engine/metaSession.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/metaSession.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/midiBridge.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/midiBridge.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/midiCaptureState.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/midiCaptureState.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/midiInput.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/mixer.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/pdf.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/pdfLayout.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/pdfLayout.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/planClient.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/planClient.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/playSettings.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/playSettings.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/playbackStatus.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/reharmContext.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/reharmonize.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/reharmonize.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/reharmonizeSession.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/romanNumeral.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreClipboard.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreClipboard.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreImport.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreImport.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreImportClient.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreImportClient.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreImportEvidence.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreLayout.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreShortcuts.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreShortcuts.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreStaveLayout.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/scoreStaveLayout.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/songForm.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/songForm.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/songTranspose.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/songTranspose.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/sseStream.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/engine/voicingEngine.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/generationStore.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/importCleanupStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/importReviewStore.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/importReviewStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/newSong.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/planStore.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/planStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/playMuteState.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/playMuteState.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/playStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/reharmonizeStore.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/reharmonizeStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/reviewStore.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/reviewStore.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/sessionStorage.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/songRetention.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "frontend/src/store/songStore.clipboard.test.ts",
+      "candidates": []
+    },
+    {
+      "path": "plugin/logic-scripter/README.md",
+      "candidates": []
+    },
+    {
+      "path": "plugin/logic-scripter/example/theartist_chords.example.js",
+      "candidates": []
+    },
+    {
+      "path": "plugin/logic-scripter/test/scripter-host.mjs",
+      "candidates": []
+    },
+    {
+      "path": "plugin/logic-scripter/test/theartist_chords.test.mjs",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/07-controller.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/08-projects-export.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/09-logic-handoff.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/10-pdf-export.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/11-import-context.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/12-import-use-meta.png",
+      "candidates": []
+    },
+    {
+      "path": "screenshot/13-reharmonize-alternatives.png",
+      "candidates": []
+    },
+    {
+      "path": "scripts/bootstrap_submission.py",
+      "candidates": []
+    },
+    {
+      "path": "scripts/build_submission.py",
+      "candidates": []
+    },
+    {
+      "path": "scripts/submission_README.md",
+      "candidates": []
+    },
+    {
+      "path": "scripts/verify_reconstruction.py",
+      "candidates": []
+    },
+    {
+      "path": "tools/midi-bridge/.gitignore",
+      "candidates": []
+    },
+    {
+      "path": "tools/midi-bridge/CoreMidiInput.swift",
+      "candidates": []
+    },
+    {
+      "path": "tools/midi-bridge/bridge.py",
+      "candidates": []
+    },
+    {
+      "path": "tools/midi-bridge/run.py",
+      "candidates": []
+    }
+  ]
+}
