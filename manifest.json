@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "867fbc42ee67dad90924b075faf13b6d063b6903"
+    "commit": "f994e77dfa4e996b3d18bf33ead20cda07e146bf"
   },
-  "patchSha256": "90bd2152104b5ade2c61bfcbad3dc5fa3172764b6bdecbad12333108e1ba2b69",
+  "patchSha256": "ff80adca68f1efc1d15a4af8fa549500df89baa0a2c6615c4484fac64add0dc7",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1817,7 +1817,7 @@
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
     "HACKATHON.md": "13cb16053e6666ae0552240bce36ed051b4048737407af8a8f0dc74dfbd76344",
-    "README.md": "96fd16e460994fe60bae2b7f4a8dbc258467dd89e637bf488c38b721e4696968",
+    "README.md": "4568afa85fc09157b718dce8727ce399114a4d5b0f0f0e26827ced8ac8083608",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "065a8ecf0f26dad35cb7bbff1ada0dd0da1bdc245f83265d156ccce1eb97fadb",
@@ -2004,8 +2004,8 @@
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
     "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "522d13dd4e6086a72efe15db72c3a57b5fe29ca3b38029401e71adeb0649e881",
-    "docs/manual-checks.md": "34485859f4fe09f13ae8c8e2b24f95610849fa41daa60aa5d125703500560450",
+    "docs/evidence.md": "6ca4ea279b05eac97f06a7754107e0b4e53b15e0fe860aa838304470c685abc9",
+    "docs/manual-checks.md": "0e26b86aff9a8f52dee352da43710950ffc34488e821a4007298e69fcb6aeef3",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
     "docs/model-comparison.md": "647ccd86cc66040e2311d480bb25726b0846497823984b19e822b41a2ab310d0",
@@ -2130,7 +2130,7 @@
     "experiments/speed/meta_before.json": "bb5f4a25a7b71c2a03ec9a4b39d0563c2602b518fbf8b0fc3cb95da051adea73",
     "experiments/speed/model_regression.json": "7b4285cccd1937e42e64813ef55c200ee1a70a9ecd4c40a9d8f85c0b8d390629",
     "experiments/speed/model_regression_probe.py": "b163ef45e831b9cd4c63837a0d82e108f5d350cbceea7dea40459aa3292b3ca6",
-    "experiments/speed/reconstruction.json": "fcb8cc77caf50fa8be7626ed7f7957ab018b6ec6eae4dd5fd13391225427e469",
+    "experiments/speed/reconstruction.json": "ffec3d92f03d034545cb47df14c80a10c5932dde4be6718be41f2aea6819283d",
     "experiments/speed/reharmonize_regression.json": "121806c7c1fd391f498ec2cb0a9742f9620dc9805325631999b940918cfab790",
     "experiments/speed/runtime-performance.md": "660d87770f1775cd98fa3e97ec2049088ad12b27c64d42e4c999af7713e804be",
     "experiments/speed/score_import.json": "131d0071c2cd39a114997e7080d3242dd0e47ee9f8cee5902851d15b748defbf",
@@ -2321,7 +2321,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "e53abd00bbd1cb1f579e3aca7d91e2280c41ccaa08d65455f758de7280bbc337",
+    "scripts/submission_README.md": "8c6f7ef75b3d434f525cc727a4ac799c61d51cf2b2d177902a14d939b904a34b",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",

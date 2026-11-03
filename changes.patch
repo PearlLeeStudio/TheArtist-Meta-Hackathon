@@ -1133,10 +1133,10 @@ index 97edb1d37fe17c42eb3c498b57f6920b0059d6e7..78811241e83272d48c831f539c4a2616
  
  The rule-based generator remains the fallback when torch or the chosen checkpoint is unavailable.
 diff --git a/README.md b/README.md
-index 285a07505615110c0e9dd8ca1c7102473cd8d618..9a291c76e63117e017c4a8ed5810de675bf48db1 100644
+index 285a07505615110c0e9dd8ca1c7102473cd8d618..f27aeaf9fa08aab7831b1297524de1e276c24419 100644
 --- a/README.md
 +++ b/README.md
-@@ -1,539 +1,754 @@
+@@ -1,539 +1,761 @@
  <h1 align="center">TheArtist</h1>
  
  <p align="center">
@@ -1956,6 +1956,13 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..9a291c76e63117e017c4a8ed5810de67
 +The image has been deployed on Ubuntu x64 with 2 vCPUs and 4 GiB RAM; that is a
 +low-traffic functional check, not a concurrency guarantee.
 +
++The separately reconstructed submission also passed a fresh
++[Docker run](https://github.com/PearlLeeStudio/TheArtist-Meta-Hackathon/actions/runs/41653628490)
++with all 18 models and live HTTP import → completion → MIDI. Its exported MIDI
++played in Logic Pro and rendered a full stereo WAV; the
++[measurement record](experiments/speed/reconstruction.json) links the tested
++revisions and distinguishes native, Docker and DAW checks.
++
 +```sh
 +curl --fail http://localhost:7860/api/health
 +curl --fail http://localhost:7860/api/models/list
@@ -2344,7 +2351,7 @@ index 285a07505615110c0e9dd8ca1c7102473cd8d618..9a291c76e63117e017c4a8ed5810de67
  
  ## Research
  
-@@ -563,17 +778,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
+@@ -563,17 +785,24 @@ For the older `/api/generate/chords` programmatic chord-only endpoint (no arrang
  
  ## Not in this repository
  
