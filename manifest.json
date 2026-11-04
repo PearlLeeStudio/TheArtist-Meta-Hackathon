@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "24fb6253d3e5bf7e7124626dd7b26a3103b93f9b"
+    "commit": "fce6a7ed2be2358c1d386319b8416bfc655afb69"
   },
-  "patchSha256": "121db0aaf38a3ee20a0b174f8eded283ad0e191f87bc0935593bf3d12481d6aa",
+  "patchSha256": "5d63efd2c9005fc7efe4728cea95dba58269c9ef7e5445facc8c8988355acfd4",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1153,6 +1153,298 @@
       "mode": "100644",
       "replacesCore": false
     },
+    "experiments/reharmonize_agent_eval/.gitignore": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/batch-plan.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-b.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-c.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-d.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-e.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-f.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-g.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-h.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-i.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-j.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases-k.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/cases.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/comparison-plan.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/expansion-plan.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/extended-summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/extended-summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-a/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-a/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-b/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-b/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-c/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-c/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-d/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-d/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-e/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-e/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-f/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-f/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-g/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-g/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-h/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-h/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-i/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-i/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-j/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-j/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-k/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/meta-k/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-a/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-a/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-b/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-b/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-c/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-c/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-d/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-d/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-e/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-e/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-f/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-f/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-g/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-g/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-h/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-h/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-i/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-i/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-j/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-j/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-k/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/open-k/results.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/recorded-tools/build_reharmonize_expansion.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/recorded-tools/evaluate_reharmonize_agent.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/recorded-tools/report_reharmonize_campaign.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/recorded-tools/run_reharmonize_campaign.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/recorded-tools/test_evaluate_reharmonize_agent.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/tools/evaluate_reharmonize_agent.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/tools/test_evaluate_reharmonize_agent.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/tools/verify_saved_report.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_eval/validation-boundaries.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
     "experiments/review_eval/results-meta.json": {
       "mode": "100644",
       "replacesCore": false
@@ -1828,8 +2120,8 @@
     ".github/workflows/verify-submission.yml": "2904842f882a7060eb72ae44cc71ba90b3826afbd7d34b45cc2e8b3349628b6e",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "09e22d0f520827e3c94b384cf56cd1ae9bb64e52f0873fc695f6f3e0bdd34479",
-    "README.md": "ca250e22a001b2172d42cf277058f101d90e74d7e3805bd3d3bb0fa97097d6aa",
+    "HACKATHON.md": "cdec82d5ab727ea892d91c4d6d22d2a3c0254c30392f13b26d41b0cccfb012d0",
+    "README.md": "2fed4fa7225eafb5ab46607b1aea531000fd2f2a6d8f55d9d9d3f32f0836ced9",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "cd30522f5f5b1396e1e0e067690df0f01a31e26539fab078682868d7d0b27db7",
@@ -2008,7 +2300,7 @@
     "deploy/theartist-deploy.timer": "8bd5733caed6c84da761cc597df3cd9dfae3680c015ff6818f5ab15ea31ebd6b",
     "deploy/vps.env.example": "dacaa6b50084e0c31358f024699da390e736daa938a7dc998baacdd96fb8e2a7",
     "deploy/vps.md": "3ef576b4f22f6234b8efc4b93651d8c281a7a6f4e5eeb19d63e62c67be71b1ac",
-    "docs/README.md": "81f9f975b9d448ec9f8d7a2db6a0ad097c4b77c2fa4e6808c7be889ba6a2e910",
+    "docs/README.md": "15371bf6d2ee6be91a20cb3c119e3bb7eb94c3d9d38565dc08c2b8936e01286b",
     "docs/agents.md": "2f39e16ce0cc75961a474c1f7d81f86ed205054b4d72a34435181d26ae63a65c",
     "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
     "docs/arrangement-workflow.md": "f2700a9eb25f79e6570cb0545d7c8a2479f9322deb4d5508933d14b5a09fd546",
@@ -2017,13 +2309,13 @@
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
     "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "aeb98af55d7359a8209fe779a98396b14134daee2bbca32062a2af5663ea16b2",
+    "docs/evidence.md": "a89a43b67f886674a2f287956aff0c437c9eb12878d3f64d73b46be16f5a1204",
     "docs/manual-checks.md": "0e26b86aff9a8f52dee352da43710950ffc34488e821a4007298e69fcb6aeef3",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
-    "docs/model-comparison.md": "647ccd86cc66040e2311d480bb25726b0846497823984b19e822b41a2ab310d0",
+    "docs/model-comparison.md": "fbb33a7e1a24373767baacf0b9faf9761a4a2f7d8ffa40d3085b8158ca6335af",
     "docs/models.md": "913e0f50f399330619af700bfbdade8d4c0a231c2af4d423bbd34631e2a8f800",
-    "docs/open-weights.md": "d0df4453c863f4333dde297d8802fb92eabad022217bba0e72e4e21eed651a7b",
+    "docs/open-weights.md": "3d58876859838a36a2c905f668a9ad141c0f689ccf7572b360afffd3dd171a60",
     "docs/reharmonization-evaluation.md": "d355f95a3d9c81c20854fd03b49384d028b1323b9d60a7ae79b6324bd524c5da",
     "docs/reharmonization.md": "5d2f568c1ab053e285c0452035548c7a49b0f13250d62c29920b0a7712d3022f",
     "docs/score-analysis.md": "dc1606afd70d6c0b0100e93c48ad3e494a1a8b1b8a4b7da6d66088e56eec4ff0",
@@ -2128,6 +2420,79 @@
     "experiments/reharmonization/local-model-probe-summary.json": "0f20ee55d044411dfe522b600fc0d304553395e8f3955176d44a4b2d8b1df05e",
     "experiments/reharmonization/results.md": "bca04efeb15e539a1412293d00b386a6a6874a00c01c4793e7ff210db1a68ecf",
     "experiments/reharmonization/summary.json": "a1092b80615c50f8d5a108fd3ec5bf608a7a2a7d424fa45566fc7f05ced258b1",
+    "experiments/reharmonize_agent_eval/.gitignore": "9e0114de1656fd5d4133fc225475817b91df3373ecbd8cb41638774a06e1b9c2",
+    "experiments/reharmonize_agent_eval/README.md": "89100c4f1e8da93e574ecb6a5806d6492f0194cce79d33f5cb31c270a859c8da",
+    "experiments/reharmonize_agent_eval/batch-plan.json": "29d87ec127217054975e4f68f74a7280d7e20fbc9ef779328b2317bf3dd6608b",
+    "experiments/reharmonize_agent_eval/cases-b.json": "e1aed84b3037303031f2e2cbe302d7e122f5964093c74408a59985312437b614",
+    "experiments/reharmonize_agent_eval/cases-c.json": "533e38a161c2170f2bef8d9b83341dd2dfeff7e6800cfe76d1e4471a5a5ab3f7",
+    "experiments/reharmonize_agent_eval/cases-d.json": "ae6e77dca52e7c3a8b9b670f022052ab4b51026d564fe01df7a315b532755a25",
+    "experiments/reharmonize_agent_eval/cases-e.json": "9810bf1c6c7fb91278e976db4b8d78fd09b173bbe01e46e5abe5e45895e2fcd2",
+    "experiments/reharmonize_agent_eval/cases-f.json": "5163cdebb16c9a067d3e075a14a3fccacbeabcc4adf1d3406221f7d641632b8e",
+    "experiments/reharmonize_agent_eval/cases-g.json": "48a7c8d776f87351179845568ef1640d14bbb181b5fa8389786d9639ae0622c0",
+    "experiments/reharmonize_agent_eval/cases-h.json": "96882578f07a2338b5263ea711d3e83b53b00d059bc21b1b1936b1484a7c22df",
+    "experiments/reharmonize_agent_eval/cases-i.json": "df141c83222ed07656c112be31f5b36bdb543208f3c22e66ceefffc9d7b40d3e",
+    "experiments/reharmonize_agent_eval/cases-j.json": "02dc23e5726f68960bfbb5b06ed2517f362f23eee09cedf5ced0d41bcdc41a7d",
+    "experiments/reharmonize_agent_eval/cases-k.json": "386f1b98d584bba6efecf22e4537bfdf11afc1fc39ae62e08d2b50cb9ecdadf9",
+    "experiments/reharmonize_agent_eval/cases.json": "1aa3d5e56ffd2f6c9dba64c9109ec2733de27775d2af17a9a2d278fe202bb100",
+    "experiments/reharmonize_agent_eval/comparison-plan.json": "6572b760ec0bfa14db630bb9d981ccdf533accf34a9d87e01506b0e6f517319e",
+    "experiments/reharmonize_agent_eval/expansion-plan.json": "69fc600630944f27cded26c386bc8d499eb24f54477feb1e585aef36378c47bd",
+    "experiments/reharmonize_agent_eval/extended-summary.json": "e2414944be317b331ba3acb0803b1042ba879900becc4bcfcf595e2b2299d0ca",
+    "experiments/reharmonize_agent_eval/extended-summary.md": "f64f894f5ed9ba37370a2867cb2d797d9d36af7a40f5af82f8c612f38cf0793e",
+    "experiments/reharmonize_agent_eval/meta-a/ledger.json": "ae57ecb85d8cdddfade2f74146c10965982bd853715fd0caa248d4a190aae381",
+    "experiments/reharmonize_agent_eval/meta-a/results.json": "3747cce676432f65843fb364a922e5381b0a26f99076f217650e50666c2e6d6d",
+    "experiments/reharmonize_agent_eval/meta-b/ledger.json": "b067fbf99c62d79733a059734d19f89271b7b419e010764bd8da540cf2c19d2b",
+    "experiments/reharmonize_agent_eval/meta-b/results.json": "841b18b343b1f6f0786d8f14399ee6dd72ebf6caa2399758f138343b13ba446e",
+    "experiments/reharmonize_agent_eval/meta-c/ledger.json": "91d5465d15bc8b5b92128db70ce5396c03a21513d1931ddbda1f9177837ad367",
+    "experiments/reharmonize_agent_eval/meta-c/results.json": "4fb732495daf027b89d2bc349626f721eeab66d79c12fef2bc6d886f0a624473",
+    "experiments/reharmonize_agent_eval/meta-d/ledger.json": "db4d1d82da11ed44fe160ccd2d80539d8f9ba38175a7a260a9be30d2a3472d09",
+    "experiments/reharmonize_agent_eval/meta-d/results.json": "adafe96c8907e95bc9cb72d9871193ef1100dd9f230b807c1a7a8e115cc3d4be",
+    "experiments/reharmonize_agent_eval/meta-e/ledger.json": "a781e9fb7b968bf4a52cccc33e188fbd32f79bfc1aa636477cc3b820d3091b8d",
+    "experiments/reharmonize_agent_eval/meta-e/results.json": "eb3dbf50428ccb16adb8d1cc7d47e285d6260a688b44e373b32a72d318d8af3d",
+    "experiments/reharmonize_agent_eval/meta-f/ledger.json": "cb3739880fdc2bda8335676d8dbabd1ca3ede8de1ee40faa2c8b5d7646ac68bb",
+    "experiments/reharmonize_agent_eval/meta-f/results.json": "bfd61192486e93fb17427121c6529884dd67b4e9d6c96967420792ce949c1980",
+    "experiments/reharmonize_agent_eval/meta-g/ledger.json": "61ec3d05d81f99e2092aaccfd79c4f13632278280c54e7dde4e656badc439819",
+    "experiments/reharmonize_agent_eval/meta-g/results.json": "8a0b01b42689dd50c1a80d93e5d1b4768c9be64fea46bf7b0da813b91aa48aee",
+    "experiments/reharmonize_agent_eval/meta-h/ledger.json": "c6742c110c37a59800e7356c162373ea264da1eb5df803a1f51e95053e0b42bc",
+    "experiments/reharmonize_agent_eval/meta-h/results.json": "9ca993d97d101c7dc21861801e2fc0fee318a5e223fef89b3e800b1bc0af4bee",
+    "experiments/reharmonize_agent_eval/meta-i/ledger.json": "4123ec487f945ceb79b447bffb192fb34eb3f6a308f526e3807c4917e608e58e",
+    "experiments/reharmonize_agent_eval/meta-i/results.json": "6862242b519d7501c13499bd469bc789b707b56f02f8b378cb428a641681699f",
+    "experiments/reharmonize_agent_eval/meta-j/ledger.json": "0335f43ce20566721ebaee596f3691cc991327da101537ccfefdc2637dcbeed4",
+    "experiments/reharmonize_agent_eval/meta-j/results.json": "f479699f7203ab9cc5b2927b6e4410b57239ca6cce67fc3b7f723915ddbae330",
+    "experiments/reharmonize_agent_eval/meta-k/ledger.json": "d5e136314c258b40f0e672f2f8feba7e0ebb15f74d19c22084f7465a4e921ae0",
+    "experiments/reharmonize_agent_eval/meta-k/results.json": "4220f7d630c45166abf17e1fb30681c6e020bba640b1e6f31f756c3176fd9579",
+    "experiments/reharmonize_agent_eval/open-a/ledger.json": "1a38e5c0d3cc88194639b63f9e996a06b9d9f9cbea083206a79d498e550bf5e1",
+    "experiments/reharmonize_agent_eval/open-a/results.json": "0a8edda6c662a1bc6d6fb72a5681f5afef15c8f1da3e988a8fec725da24f6aa6",
+    "experiments/reharmonize_agent_eval/open-b/ledger.json": "7de11cc8898eed1b9df8c94f7d5974848174a7ef0ab80c66e6682bd2776e31b7",
+    "experiments/reharmonize_agent_eval/open-b/results.json": "04d073a25a420534a23eec7e8d243c9f0eb77bc93229f6503f156c666e670f03",
+    "experiments/reharmonize_agent_eval/open-c/ledger.json": "5cac3008e72ccaa4d52b0b593305f513501fd007e210a48b1e1e9a7628b80b94",
+    "experiments/reharmonize_agent_eval/open-c/results.json": "da673529c730526b500cedd63f02dc1ca7b9e124926710564ae9701be42d2d11",
+    "experiments/reharmonize_agent_eval/open-d/ledger.json": "c48c243c9daf7a9bd88d6a4076805114cfdb2485131cc06cf39276b23db60d26",
+    "experiments/reharmonize_agent_eval/open-d/results.json": "b5ba3b26e1fcf57bef46fd5af7a46647dcc81b7c008381c25587253995cc1fa9",
+    "experiments/reharmonize_agent_eval/open-e/ledger.json": "f3e26614ae0decc72cca5cc79fc78413d5f9f0d693dfdc521d46b3ba9e0945dc",
+    "experiments/reharmonize_agent_eval/open-e/results.json": "a269223a0f2bd9d69d473db59abf87d84c86809178c2695e0a3db18dadebb741",
+    "experiments/reharmonize_agent_eval/open-f/ledger.json": "d9ed6a76d370af162596f7c1f60c2636f24c7422391028f232ef621e87263da0",
+    "experiments/reharmonize_agent_eval/open-f/results.json": "c749f85066eb681ff7e64fbec7214655b31f4b07881f0cb4d41444b863aa203f",
+    "experiments/reharmonize_agent_eval/open-g/ledger.json": "042e0a06ca58148fdace3ccb3be0b8a5314a5b78d3dad4e32017f7c5324e3acb",
+    "experiments/reharmonize_agent_eval/open-g/results.json": "4ef3283a049fcc5a44d767381f2ac83980d8accea0c92617eea07a9d49bb8445",
+    "experiments/reharmonize_agent_eval/open-h/ledger.json": "2a655177cbd1d80727627e9fc20e877e370c926f05f478de105e277d8f0d3c5f",
+    "experiments/reharmonize_agent_eval/open-h/results.json": "4cde583ef2a32bb64a0c13b1df25d4890b8076dbdaabeb9f7552ddb1c7daa53c",
+    "experiments/reharmonize_agent_eval/open-i/ledger.json": "4e7aee83d7ef882a6c838c81e0977a8bcec27a9f77e8e82f69640245b42e74ab",
+    "experiments/reharmonize_agent_eval/open-i/results.json": "26d6720058d7560be8c105024be16d1a4eb4091ff0f5cc12c6b22c76f34f7ce2",
+    "experiments/reharmonize_agent_eval/open-j/ledger.json": "ac2f8f40a60f48fbdd5d7a6dcb56273d645c58249d59020553092b02191b95f6",
+    "experiments/reharmonize_agent_eval/open-j/results.json": "8d75ec0eee5fb2f6e5bb016aec5141ef5cadee757178b2dec79b94fd92797648",
+    "experiments/reharmonize_agent_eval/open-k/ledger.json": "0c850f5d2ff70fe9ed9828bf8d9e8529ca648cd688bb5397240d9007e54e7b25",
+    "experiments/reharmonize_agent_eval/open-k/results.json": "a2b7fb1fdecd746e4ada5623f63b29d2a97edcf30d6d32ca25829d3a359b8cbe",
+    "experiments/reharmonize_agent_eval/recorded-tools/build_reharmonize_expansion.py": "b28aab01f88f87fc8759671258aa363327a502ab7c5f95f7c3ac382a6fe4dd0d",
+    "experiments/reharmonize_agent_eval/recorded-tools/evaluate_reharmonize_agent.py": "8251d320bf05f7b3f6e0e9a462c3aaccdcc70865d2fa3ba37e79153b390240ac",
+    "experiments/reharmonize_agent_eval/recorded-tools/report_reharmonize_campaign.py": "423acf673112a75aff5a99c9bea0d7dfe60614f04681bb9dd78395148b40a800",
+    "experiments/reharmonize_agent_eval/recorded-tools/run_reharmonize_campaign.py": "376b3134c3a04aa694fd71038eaf48fb21b4ff8a9dd021d5a96620488a3fe83a",
+    "experiments/reharmonize_agent_eval/recorded-tools/test_evaluate_reharmonize_agent.py": "95abf6a8cd791686fd4120d852602651d215cd163f2e94590c82202b77fbcf33",
+    "experiments/reharmonize_agent_eval/summary.json": "a5bfb3f38e7d85a8a9f9f235b2ecafb14bdc0b5fe56f58e259600c9fbc33ebb3",
+    "experiments/reharmonize_agent_eval/summary.md": "8d9b94dfb538264f92ea0e16026e7c4ba78c797818af2b1ee0469e0f4d1ed683",
+    "experiments/reharmonize_agent_eval/tools/evaluate_reharmonize_agent.py": "8251d320bf05f7b3f6e0e9a462c3aaccdcc70865d2fa3ba37e79153b390240ac",
+    "experiments/reharmonize_agent_eval/tools/test_evaluate_reharmonize_agent.py": "1816b7d6e6cdf946d78fdf5b005bf9d9808122f904d6a41dc46a6fc95d6fcd4a",
+    "experiments/reharmonize_agent_eval/tools/verify_saved_report.py": "5843cd2c8a80bd49ede28b1a98d755b113931f797b180c2659393694e862b6ee",
+    "experiments/reharmonize_agent_eval/validation-boundaries.json": "74cc2ab6b4009b1becdd6e9e4ced71147dfdb33f5aa72e5a498b1be10cb6e78e",
     "experiments/review_eval/results-meta.json": "d4a4889c13646ca4f8b88c24cb46a0bffc2edfec95f13f64fe2fc4c2be3d9b2d",
     "experiments/review_eval/results-openweight.json": "378c61ec80204bf431877e6ea8df35899cd8061c72032c9b9733668c662c7adf",
     "experiments/review_eval/summary.md": "ee282b9922b8eb805954ba4654e78fc9f4d460533a20434204858b93ebe97b3a",
@@ -2336,7 +2701,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "40bed5f5b0534e1ebf5da618539afe38389f9ea6cc3192edcc02a84d061ccadd",
+    "scripts/submission_README.md": "f76f07576d0855304c123ca60b8910e149516230d67877bd0374a75d451f9b89",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",

@@ -1511,6 +1511,371 @@
       "candidates": []
     },
     {
+      "path": "experiments/reharmonize_agent_eval/.gitignore",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/README.md",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/batch-plan.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-b.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-c.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-d.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-e.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-f.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-g.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-h.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-i.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-j.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases-k.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/cases.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/comparison-plan.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/expansion-plan.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/extended-summary.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/extended-summary.md",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-a/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-a/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-b/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-b/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-c/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-c/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-d/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-d/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-e/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-e/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-f/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-f/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-g/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-g/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-h/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-h/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-i/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-i/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-j/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-j/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-k/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/meta-k/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-a/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-a/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-b/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-b/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-c/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-c/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-d/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-d/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-e/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-e/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-f/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-f/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-g/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-g/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-h/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-h/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-i/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-i/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-j/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-j/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-k/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/open-k/results.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/recorded-tools/build_reharmonize_expansion.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/recorded-tools/evaluate_reharmonize_agent.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/recorded-tools/report_reharmonize_campaign.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/recorded-tools/run_reharmonize_campaign.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/recorded-tools/test_evaluate_reharmonize_agent.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/summary.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/summary.md",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/tools/evaluate_reharmonize_agent.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/tools/test_evaluate_reharmonize_agent.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/tools/verify_saved_report.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_eval/validation-boundaries.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
       "path": "experiments/review_eval/results-meta.json",
       "delivery": "file",
       "candidates": []
