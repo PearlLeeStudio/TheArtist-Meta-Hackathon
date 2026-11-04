@@ -9,9 +9,9 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "fce6a7ed2be2358c1d386319b8416bfc655afb69"
+    "commit": "eb5adc534e42d3b3c9fd68a8dc59eef492c76513"
   },
-  "patchSha256": "5d63efd2c9005fc7efe4728cea95dba58269c9ef7e5445facc8c8988355acfd4",
+  "patchSha256": "7e92dcaeafbeb7ccc9978f66c96e81750c2c9ea59ccb56fc8133e8ac7db4ee70",
   "materializedFiles": {
     ".dockerignore": {
       "mode": "100644",
@@ -1445,6 +1445,498 @@
       "mode": "100644",
       "replacesCore": false
     },
+    "experiments/reharmonize_agent_stress/.gitignore": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/README.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/baseten-0-progress.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/baseten-1-progress.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/design.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/execution-plan.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/inputs.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/meta-0-progress.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/meta-1-progress.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/preflight.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/preparation/design.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/preparation/inputs.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/preparation/preflight.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/preparation/prepare.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-2/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-2/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-3/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-3/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-0/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-0/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-1/ledger.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-1/results.json.gz": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/stop-decision.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/summary.json": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/summary.md": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/campaign.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/preflight.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/prepare.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/report.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/test_campaign.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
+    "experiments/reharmonize_agent_stress/tools/test_report.py": {
+      "mode": "100644",
+      "replacesCore": false
+    },
     "experiments/review_eval/results-meta.json": {
       "mode": "100644",
       "replacesCore": false
@@ -2120,8 +2612,8 @@
     ".github/workflows/verify-submission.yml": "2904842f882a7060eb72ae44cc71ba90b3826afbd7d34b45cc2e8b3349628b6e",
     ".gitignore": "274476fb522bb34440436e853d8ff3e08959ee3474ed34bf0b8f26cc81a067ff",
     "API_SPEC.md": "ecb8fd778f8cee8d2370487d8363bc77e4a45509bd38dc2312b79dce279828b9",
-    "HACKATHON.md": "cdec82d5ab727ea892d91c4d6d22d2a3c0254c30392f13b26d41b0cccfb012d0",
-    "README.md": "2fed4fa7225eafb5ab46607b1aea531000fd2f2a6d8f55d9d9d3f32f0836ced9",
+    "HACKATHON.md": "05f25915b7fbbdf63dd5b5be393cee088fba19c8b6f8b00d5a09ea78851feb5a",
+    "README.md": "29cbc1a6d356e95fecca787a1c4dbcadc7823b03958c2c07ac11e1f950b2941f",
     "agent/README.md": "9f8c839b527665bb7eb6200ba4718e57a82222ba81cbbbe7e601e7741dc7806c",
     "agent/annotated_music_eval.py": "a444c38492eb0a4eee208621d8f4b01a9b1d68fc81c0484c4159523c444fb4ff",
     "agent/compare_reharmonization.py": "cd30522f5f5b1396e1e0e067690df0f01a31e26539fab078682868d7d0b27db7",
@@ -2300,7 +2792,7 @@
     "deploy/theartist-deploy.timer": "8bd5733caed6c84da761cc597df3cd9dfae3680c015ff6818f5ab15ea31ebd6b",
     "deploy/vps.env.example": "dacaa6b50084e0c31358f024699da390e736daa938a7dc998baacdd96fb8e2a7",
     "deploy/vps.md": "3ef576b4f22f6234b8efc4b93651d8c281a7a6f4e5eeb19d63e62c67be71b1ac",
-    "docs/README.md": "15371bf6d2ee6be91a20cb3c119e3bb7eb94c3d9d38565dc08c2b8936e01286b",
+    "docs/README.md": "d0b7aa8c3f1125a67c3fff4b32fc9dc037c1b7f0e0d4ac9ff6d0451c29a7724b",
     "docs/agents.md": "2f39e16ce0cc75961a474c1f7d81f86ed205054b4d72a34435181d26ae63a65c",
     "docs/architecture.md": "363c204ffdcd4930087eafec2add93e7a828f69daa5a42badbb9b103badfb818",
     "docs/arrangement-workflow.md": "f2700a9eb25f79e6570cb0545d7c8a2479f9322deb4d5508933d14b5a09fd546",
@@ -2309,13 +2801,13 @@
     "docs/demo-timeline.md": "9026c9d5fc783b62531de57ed1a7a355e0ad57d9284de2ef7c5d3ca6f1246cc6",
     "docs/editor-reference.md": "0b7bb9c901d696bf8a0a13167959d1874a0cf9a009369b2055b7f3100f539688",
     "docs/evaluation.md": "dd00a31c222d55d3d213016d7c65bfac45f70918eb8f21bc0c009db422d2b97e",
-    "docs/evidence.md": "a89a43b67f886674a2f287956aff0c437c9eb12878d3f64d73b46be16f5a1204",
+    "docs/evidence.md": "f28d8bcf7862c46928a115c522e9281d1a0953f1462d77e5fb6228bed6654ae9",
     "docs/manual-checks.md": "0e26b86aff9a8f52dee352da43710950ffc34488e821a4007298e69fcb6aeef3",
     "docs/mcp.md": "a80eba322e736963894fb80dca2aa0ea2af31cf12b8d94976d363ed7c62a1c39",
     "docs/midi-input.md": "52a43d48f4227f59567e23914df31c238f4aec5fd403efe3a2dcb6546abc9802",
-    "docs/model-comparison.md": "fbb33a7e1a24373767baacf0b9faf9761a4a2f7d8ffa40d3085b8158ca6335af",
+    "docs/model-comparison.md": "0a7799b426a8db0570f4099b8e427a515b9fa67707ae38136e3267af712936d0",
     "docs/models.md": "913e0f50f399330619af700bfbdade8d4c0a231c2af4d423bbd34631e2a8f800",
-    "docs/open-weights.md": "3d58876859838a36a2c905f668a9ad141c0f689ccf7572b360afffd3dd171a60",
+    "docs/open-weights.md": "78879a56ae0c20bbffec3a72035dfeaea160786ec6724d03b2c26bd103dd304b",
     "docs/reharmonization-evaluation.md": "d355f95a3d9c81c20854fd03b49384d028b1323b9d60a7ae79b6324bd524c5da",
     "docs/reharmonization.md": "5d2f568c1ab053e285c0452035548c7a49b0f13250d62c29920b0a7712d3022f",
     "docs/score-analysis.md": "dc1606afd70d6c0b0100e93c48ad3e494a1a8b1b8a4b7da6d66088e56eec4ff0",
@@ -2493,6 +2985,129 @@
     "experiments/reharmonize_agent_eval/tools/test_evaluate_reharmonize_agent.py": "1816b7d6e6cdf946d78fdf5b005bf9d9808122f904d6a41dc46a6fc95d6fcd4a",
     "experiments/reharmonize_agent_eval/tools/verify_saved_report.py": "5843cd2c8a80bd49ede28b1a98d755b113931f797b180c2659393694e862b6ee",
     "experiments/reharmonize_agent_eval/validation-boundaries.json": "74cc2ab6b4009b1becdd6e9e4ced71147dfdb33f5aa72e5a498b1be10cb6e78e",
+    "experiments/reharmonize_agent_stress/.gitignore": "439a327f19b7ff1d004e52c25f00a0a2a7bde3a7bc9a4ad14b865257990cc927",
+    "experiments/reharmonize_agent_stress/README.md": "0a837dacd9931dbf2ee4f26712553865d7c056ccc3890b8640681be271a991ca",
+    "experiments/reharmonize_agent_stress/baseten-0-progress.json": "009b5a96d702f7f1793168b9532d278dc0a9617e3dc98e08959ba79ae0b2833c",
+    "experiments/reharmonize_agent_stress/baseten-1-progress.json": "f212af6db8661441a9b875ef39153d7ddd6a1369017cfef10abfcbbf1537f688",
+    "experiments/reharmonize_agent_stress/design.json": "cc5b7cdc9afd445870bfba64af25dc9c0390fbdfff6a9249dab3ec2c9345a60b",
+    "experiments/reharmonize_agent_stress/execution-plan.json": "b5bde20367a7d6f27b2ab796e450b2cd82ead879d2c8dff4d16d323361d25773",
+    "experiments/reharmonize_agent_stress/inputs.json": "685487a9badd6179be5a11697b281c15df949ec8b0b8d0f038d0276cd6a99955",
+    "experiments/reharmonize_agent_stress/meta-0-progress.json": "dddd6ebec58da706dd48682b0ebdf14944f5f9a87131935384c29c06699f5180",
+    "experiments/reharmonize_agent_stress/meta-1-progress.json": "85362a708cd884943af0500dbbaf7e527a0bc2bf3d4c1061eda6a8f91872b312",
+    "experiments/reharmonize_agent_stress/preflight.json": "5421cfe8e14b7f1345b7b0373aa2163a3aba6eb9af588bdf3862813de8ce43a1",
+    "experiments/reharmonize_agent_stress/preparation/design.json": "1f1256f865f0ac7137b31c1727a763186889f9bb791a7d7472055aabdb771980",
+    "experiments/reharmonize_agent_stress/preparation/inputs.json": "9ee31185e954a52821eb98b4463b21c9f79e364fa744f15292064ba229d6eaa4",
+    "experiments/reharmonize_agent_stress/preparation/preflight.json": "19b7c4dd42da6002a4ad8b8f8bfc6b0927cc5bfb4dfd41851ebb9bd707efce07",
+    "experiments/reharmonize_agent_stress/preparation/prepare.py": "27941578838a1c9fd037e1c4ace81704d75d696bebab47cfd32d520ac59dadc3",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-0/ledger.json": "e15cfa3a3c0865c59174d3543ac8b3168f4129df39d8f2ff16aa189f44de1c2a",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-0/results.json.gz": "2b40e70c1373d42dfaa88f6c7f06508c6f15f5284e7eda79479997cd6acd1ffe",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-1/ledger.json": "ea61af99e9f28712c694dd921a143bce5ead7cd1743758dad0f7d4559465de01",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-1/results.json.gz": "c7ac43c0efba8516567204b0ac3fb2d3799e2bf9dccc3de6d4f14a4c90cc16d5",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-2/ledger.json": "f8ea1c781cedbe9d9199ddbc60e449dd3bb763f840c1f6200e4e1843b13c90da",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-2/results.json.gz": "58bf0ef69eb4d37922b2a605f866e4f5ddc87ddd35ac201339aaf35a16770a0a",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-3/ledger.json": "2c9d25db8ead7193c34a46154fa3b6b0933e1484e342546a01bcb88d92761674",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-aeolian-3/results.json.gz": "b83ab16d044495b33b4cd79c50cc43368eaa42148bed630f626f0ffffdbbba3f",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-0/ledger.json": "e6e9d5ac287ad0395d3c3d7b65c9669aed807695a83310957a774da45a706a55",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-0/results.json.gz": "8c775f29047f190688e91b1416f78fa703643d58d7198f306f13ad3c35a0823d",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-1/ledger.json": "2fb8d3b2a994b5c4e91a071dcba71f15eece78f3bfe2f70043c1a8c99282e98d",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-1/results.json.gz": "f05944ec78aec2f96889a28c85c91301826c0208d4e31649834caf28f69e0392",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-2/ledger.json": "d00605603d1ccfd7fc580a6bd16641bc24a3398e98d8ae837fad8f0616c00d27",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-2/results.json.gz": "065a04547bd01f8ed3f203099b14c817cf0af126fb09358d40569f3056081bab",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-3/ledger.json": "1a6ea43c7a49f53c955670ab3a752174a7c284c70cb37eb74d4018226dfc2e92",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-auto-3/results.json.gz": "aae329f43f0e730666e3feee7b164f45d197aab8964f1a361e73eeaab92b3085",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-0/ledger.json": "fc6c5bcfe9634795a98c0f0db6d4ae35ee37279dbcaa9f87fd4068b1c2a2ca96",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-0/results.json.gz": "08299916edefdf9ee045713eb24b7b4b4bb9db496f1d46d64d2ba2e7b83c1246",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-1/ledger.json": "17fe8955950c6e2bb30e57f318973654429dae637f625e9d6e7c3aa792d449b6",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-1/results.json.gz": "5630697f4e785fc297126a77116de93a25f8493b7d07cb390c021520303bcdfb",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-2/ledger.json": "d671812eecf223bdfa4754144e49298d0edbe200790e24ec847376c7d10512b8",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-2/results.json.gz": "5ec00ca4c1593986c8e216e60fcbf54ab1873e811bf5c2e90662f18d481c8059",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-3/ledger.json": "bad40e65967787b0680cbc0318a9fbc2a44e1b5affef8f682ad64eb7f6c8dbb6",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-dorian-3/results.json.gz": "5fd45559ad5f9176ce283c0078cda4782c32390bcdbecb474ddb140796b935c7",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-0/ledger.json": "db8d01bfe0837dbc7a02884ba485be993b4ac88a2e29fc9dca9001e5591cfc23",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-0/results.json.gz": "5ce57283ddac3094f8b8f33e3d7cf2ce0fa54bb7dc1dd3160743770b7c8bef52",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-1/ledger.json": "8d32d3e809ce0f16779b6432f34dce33bd70b62bd1d204536ae4d5586d8dd630",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-1/results.json.gz": "d0c17b79d8e3c0fe7b66392122629ed4eb56d9f7560a15b7cf7b066ddfb1c170",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-2/ledger.json": "a1f267bbaa1777ea7fe49428d5d75fae080bd2ae0ea416a4f41981f40d7faf3e",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-2/results.json.gz": "e52f58ea7d296c62254651dff2b5dae7fb012abcfc0872dcf57bf614686a4b88",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-3/ledger.json": "daf044d1efbf497d3ab40492a74a76e1ab9d4284d583a8307fa792f6c31f7b22",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-ionian-3/results.json.gz": "d4badf7e9e6c5047e5a31d42871bbc0492edcb1201cbd4ff21fc9dcc4ee8cb03",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-0/ledger.json": "b3bb8bec6b8157405761c15f04e492a87efb289a6a257a27d9279debbfb5d0b2",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-0/results.json.gz": "09d0369236a28428f7ba9dac1715d50ece36aee53841fdc1a30f51202e8da14c",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-1/ledger.json": "92274d23ec764a04b2c94fbf99a4984807e463c1c23131aee97422607b2612df",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-1/results.json.gz": "ec8be355abe1c7fae4941669e0a359b9b46c19894632e8add61c0ec9608a005e",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-2/ledger.json": "2183565ab5e1697fb91cfae92bd02c316316bb4f8548ce51dba5ba816e46302a",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-2/results.json.gz": "db2a58c9b0d3b2e7ae5a2f6d9d213a0ddd3135a3dab028262cb822e45ac34657",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-3/ledger.json": "0f208e4602b878ccf49c47d71c14cd08309dc0d089578f3f831e8f10c2e38bcb",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-locrian-3/results.json.gz": "c8aa3298e7cb014afae696f9ebd2db9ede03c7957344f99a8c7ab848b10b0472",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-0/ledger.json": "e9f156ddbcd4b0988d2906d6d97615f55faea1eb3694a793cbef0c4cac99c265",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-0/results.json.gz": "86e93a280e9a3e5d6316576299e399910db131952e6a1b49f7f8350bd692f7a2",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-1/ledger.json": "a48308035b1a6403120e8ff77aa20872881b40bfde172f8f333c697b72cb198a",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-1/results.json.gz": "88788d8fc0288c4a2c127926999d3a9215307d0dfa9408b6fdf61a7f468dc098",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-2/ledger.json": "b4e9ce623a4bd3d8c37d91cca00d4d0ee18dc1e6fc0861a69f8304e07b722096",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-2/results.json.gz": "c52cc5347cd65297fa2123cc5f08260400e1e4d8a168bb3e5bed2b905d458a22",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-3/ledger.json": "b02f7dd8bb38dcba5d48713ed14b68145c7f9305c713ac69c654628fb86b5c52",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-lydian-3/results.json.gz": "cf3b5168d51664f977b560c0f6f1f8a1e93e03474caca9f7075a47336381c325",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-0/ledger.json": "d6f0cff4ab5eced55cbea10a3706185ef7f772aaf8969ba6fcf1e737ef1832c7",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-0/results.json.gz": "391398bd779a31a1e03aa875d3823469b2a660be6a11c5af94b92c43f24b8148",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-1/ledger.json": "4d531b10f324f9500ed3f9189b58a9575eaaca51454dc0baf5ea597d45fc8f4a",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-1/results.json.gz": "7fe8c2fa385dccf8728751a43e62cc7fec9ce893144b652c6ca677d87e9d8524",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-2/ledger.json": "34382292374cd7fee77af3a9075e3c36a591a102690b2e3a0ae9a1543e97736c",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-2/results.json.gz": "10f5530933a6bc8af7d45afd16c5bac39cbf660736d2eb07558574d861502a51",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-3/ledger.json": "02b806cee740041677d8ee230fa845faebd2f27131e7b6c833d2809245858f45",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-mixolydian-3/results.json.gz": "b21da2e3b63f0901b248a4e00b7b0a18badfd7fe0c07eeeaf4d657185fa66e65",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-0/ledger.json": "68a7d26c857b7593ca15f0d2cbdb64de9bb93ffd8d3ccbfdd527e6f4cfb743a6",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-0/results.json.gz": "253994240609fdd7d669b25de7b36efb67b495a8b18baae328a57ac662e7af28",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-1/ledger.json": "4608f0d3ec42152f82f36010f4299eba0b3aeba8c048eaa6ba747bebfc8e3b94",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-1/results.json.gz": "71961adbd1e14655bea088f42c1f6ddf7f81431afecc5e2f633b4c9deb875c06",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-2/ledger.json": "4895e12c183b2df41cf9d778f85d1ac424536e310ba6116b0cb6fad06d774118",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-2/results.json.gz": "51a609ffaf4846898821eb11aa6448b6e537e7a8579a95171a0d45e9ae1e1036",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-3/ledger.json": "f362b9909141deaa5026cea59841427f7c63f620ce25578aa13bcd0355237fcc",
+    "experiments/reharmonize_agent_stress/runs/baseten/new-phrygian-3/results.json.gz": "50a702cfdb037797b8a56566ba10b70d909dde202ebf07183ff5c6d1f5303b1a",
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-0/ledger.json": "760c31f7f6b633d741d4704d268efe8535c0e1a6617a374965a1b0329ccb8535",
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-0/results.json.gz": "b29f26527a58060669f5d0422ab4f4076931701e61500751ee169f8c5e140cf4",
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-1/ledger.json": "45740d2fbbac20e0a72cbfce011286cc314e0bc5521e2d2754deef15be75c47e",
+    "experiments/reharmonize_agent_stress/runs/baseten/regression-1/results.json.gz": "0e98342ec80019135c20ec697a1e807a8b50aab42434401aa403656d82ef3928",
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-0/ledger.json": "dd1a1315f50b5ff84061d6ba6529125ff2490730ed1cfac1aec40fb09ce02261",
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-0/results.json.gz": "d81f04047a0ec5b30ca7a6cd397e218b870a4022366043523319ee558aa93e50",
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-1/ledger.json": "635e2fcba7176016a42d78e71a3806e4711246821e5838e13537ebea3cb12cf4",
+    "experiments/reharmonize_agent_stress/runs/meta/new-aeolian-1/results.json.gz": "68df50b5c6ae453cb213b2f50441d221235ff71fd4f06a3ec15828f2df32f543",
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-0/ledger.json": "eb842f97324ef76b08d24e5cc1075f16958b30e03a32d90c0775c52d7048a535",
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-0/results.json.gz": "ac251604b9b15e85f94dc8a2ea1466aaac2c2bfe76c3ddb46027069903dd33b1",
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-1/ledger.json": "e081a0eddc529326c55c2ad2a37f5078fe1e598b08117ccd3edf8097533d5f23",
+    "experiments/reharmonize_agent_stress/runs/meta/new-auto-1/results.json.gz": "13ec6ba9995814945ceabd551c4139bbdd856c43e748f11a4763a668d3195863",
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-0/ledger.json": "4d4fbd0515c4c81074621f23db651f3bedcd6867fc9fd30c60b00dcb0537f062",
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-0/results.json.gz": "b894b686fede5763130e9e8ff9793a7a75fca32365f3b2011bd6428400f16b81",
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-1/ledger.json": "f70e044a079eeac609603a41982113d038bbadc473da4028c12021906e05cc4c",
+    "experiments/reharmonize_agent_stress/runs/meta/new-dorian-1/results.json.gz": "dedce0a7a9851f2edb312f021e5741734c9a095272bb8f17b71441b61d49cd17",
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-0/ledger.json": "1ed25aab02b4b5ca9743fa18e41d3c6d41b4a1c9c2a21b9b261c7e19efce79a3",
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-0/results.json.gz": "10003baded4236269b53dbe4d77784ddaa8cf068bbf94b89199ae9e116bd5e08",
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-1/ledger.json": "f404bc22bea0b96bd49a0e121c9efda9374248ef23178d7bfcffceb83eb3a565",
+    "experiments/reharmonize_agent_stress/runs/meta/new-ionian-1/results.json.gz": "e29ce196c361395a9cd7749db520fbd861e2663c4f71c5771bbe836850fb5d1c",
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-0/ledger.json": "7487cdce57ed5dca4c3e2b0689407de6002fd359ff83b4f0250fde1eb711a217",
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-0/results.json.gz": "a825757ae4bf2625d5944fb898c9beae6542d021c30f55153ead03d9e79c3842",
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-1/ledger.json": "359974d29d2dd8227b62544ac836d99b316bf7d3deaea7ae6303f95e1903a327",
+    "experiments/reharmonize_agent_stress/runs/meta/new-locrian-1/results.json.gz": "8e0b5701185dc5828b8df3807cc43fda90ab6c590cd35950c8d57e62afd334c7",
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-0/ledger.json": "3893f0d86ba829cc22ae5b62e6ed3e37b14f05498c45c1a550b2ee26a2ff10fe",
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-0/results.json.gz": "3803a7b446d39db48cea53033d0dc805d3d9b742e1e8986cd37292fbff71de14",
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-1/ledger.json": "5dbc18863b256acb553ea39ffa51d0f98c59d92b6cc8ccc3cde3ac18c7537088",
+    "experiments/reharmonize_agent_stress/runs/meta/new-lydian-1/results.json.gz": "b8398cd6c669b46141fa89e7caf33b5c8ede84e17b30d47b52253b7bdaa0a1cd",
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-0/ledger.json": "00231400c338ce7d6ade8051b48ef12863cf20b291bb1e45cd49a4eb7d20e8c5",
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-0/results.json.gz": "6796de993568785cbd95456e7decce24d01904b1c3a3fd577c6e80e81f61c16b",
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-1/ledger.json": "b0433aca0ef2d755629c1cf24a51c00466a92842fad2d91f924d29a75f3403bb",
+    "experiments/reharmonize_agent_stress/runs/meta/new-mixolydian-1/results.json.gz": "66c58d9909fcaec924d5a8c3ff74616da044a71789616df3e3859ead37d5062f",
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-0/ledger.json": "034c87955264de8ad99359a33488ecd24adbd8e658936ee59b842fc045249044",
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-0/results.json.gz": "0368a23c2047271f0cb2b169be45f39ba57250ae07dcf200c11c278a823ec727",
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-1/ledger.json": "26db40dee95b640db17e24db88479e5c47a25a8837bd25b81a210a68ca52019c",
+    "experiments/reharmonize_agent_stress/runs/meta/new-phrygian-1/results.json.gz": "1fb7e2ed5acd0fc3777b53cbef895ad4194f53bfa91eb941bbb199a3ac50ae6b",
+    "experiments/reharmonize_agent_stress/stop-decision.json": "eb78036a88b42c4d237f1292cc2fc97ee3cdb9d52f8407abf6bf3fd96fab078c",
+    "experiments/reharmonize_agent_stress/summary.json": "f0828f25af4bb87736d2d13099d794929f2797a553b263ca346e023f0cabbad0",
+    "experiments/reharmonize_agent_stress/summary.md": "a42aa46d7bff0fa7e2d6dad23fa124b2317e196396fab0195e735c7fde6b789f",
+    "experiments/reharmonize_agent_stress/tools/campaign.py": "36b71d0cb4d1533d261cacd51669191e261cb1184a65db5a84ac799aa8fcd266",
+    "experiments/reharmonize_agent_stress/tools/preflight.py": "2e8277cba0a757846c6a50027c618486a74159d4fe97a0d27ac7a2cf913df05b",
+    "experiments/reharmonize_agent_stress/tools/prepare.py": "00ec638e4bf9d676894a078b1a3901ec823e7c9e997ba00bdd5cb555f3dd520d",
+    "experiments/reharmonize_agent_stress/tools/report.py": "82f6e5230d9b183fda3de7f969ba4a5e9405fa7f5c33bf71296c30462fea3342",
+    "experiments/reharmonize_agent_stress/tools/test_campaign.py": "38cc07b1e7b28218484c2a1ff06c41a62a499ca6895e26af2ee99982ffdbafbd",
+    "experiments/reharmonize_agent_stress/tools/test_report.py": "853001260ba47658b767212cba30c2f472ca099ea934acc8aea43b257b993024",
     "experiments/review_eval/results-meta.json": "d4a4889c13646ca4f8b88c24cb46a0bffc2edfec95f13f64fe2fc4c2be3d9b2d",
     "experiments/review_eval/results-openweight.json": "378c61ec80204bf431877e6ea8df35899cd8061c72032c9b9733668c662c7adf",
     "experiments/review_eval/summary.md": "ee282b9922b8eb805954ba4654e78fc9f4d460533a20434204858b93ebe97b3a",
@@ -2701,7 +3316,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "f76f07576d0855304c123ca60b8910e149516230d67877bd0374a75d451f9b89",
+    "scripts/submission_README.md": "cf7f10548a1529101573ebd5d13a25f113c8b0f67a9935a05eab13e357f2f5d8",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",

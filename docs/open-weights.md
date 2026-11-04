@@ -1,8 +1,8 @@
 # Meta open weights in TheArtist
 
-One page for whoever verifies the open-weight bonus: what runs on Meta open
-weights, how to see it on the live app and in the server records, how it was
-measured, and what does not run on open weights.
+Meta open weights direct harmonic search inside the score-to-DAW workflow.
+This page connects that role to a saved decision, the tools and own-model scores
+it uses, the musician's final choice, and the separate reliability measurements.
 
 ## What runs on open weights
 
@@ -21,6 +21,61 @@ the judge this way since the evening of 2026-11-03 and the Reharmonize agent sin
 
 The other roles stay on Standard **Muse Spark 1.3** through the Meta Model API:
 reading a score PDF or image, and planning and writing the song form. [Which model does what](https://github.com/PearlLeeStudio/TheArtist-DAW/blob/main/README.md#hackathon-work-and-where-meta-is-used).
+
+## Follow one recorded Reharmonize decision
+
+The design assigns Meta the search and offer decisions, the author's Music
+Transformer the contextual likelihood scores, and application code the bounded
+candidate construction and validation. This supports the musician's task:
+exploring sparse harmonic changes in an existing sketch before taking editable
+accompaniment into a DAW. The musician retains the apply decision.
+
+The example below is the **first saved execution** in
+[`open-a/results.json`](../experiments/reharmonize_agent_eval/open-a/results.json),
+`caseId: major-01`, `repeat: 1` (`runs[0]`). It was selected by file order to
+illustrate the mechanism, not ranked by musical quality. The provider is Baseten,
+and every reply identifies `meta-models/muse-spark-open-1026`.
+
+Input: `C G | Am F | Dm G | C C`, C major, 4/4. The selected chords are `Am F`
+in the second bar; each alternative may change at most one selected slot.
+
+| Step | Recorded action | What can be checked |
+|---|---|---|
+| 1. Meta chooses the first searches | `search_substitutions({"families":["common_tones","modal"]})` | The reply's tool arguments specify the families; the following request contains their candidates and F1 scores |
+| 2. Meta requests another family after receiving feedback | `search_substitutions({"families":["dominant"]})` | The next model request includes this additional search's feedback alongside the earlier candidates |
+| 3. Meta selects the offer | `offer_candidates({"candidateIds":["3:A7","2:Am7","3:Dm7b5"]})` | All three complete candidate bodies match saved search feedback; each changes one selected slot |
+| 4. Product hands the choice to the musician | Three alternatives are returned with `selection: "meta"`, model identity and three request IDs | The evaluator verifies the returned offer. Audition, Apply and MIDI export belong to the [product workflow](arrangement-workflow.md), outside this execution test |
+
+| Offered edit | Search family | F1 context score | Score rank among the 16 unique candidate IDs in saved feedback |
+|---|---|---:|---:|
+| `F → A7` | Dominant | −2.58818 | 1 |
+| `Am → Am7` | Common tones | −2.66389 | 2 |
+| `F → Dm7b5` | Modal | −3.85039 | 10 |
+
+The offer gives the musician one edit from each of three search families while
+keeping the unselected harmony intact.
+
+The observed offer differs from taking the top three F1 scores, which would have
+included `F → Dm7`. This demonstrates a selection decision beyond a scalar sort;
+it does not establish a better-sounding choice or an advantage over the current
+local selector, which also uses family/root diversity. The saved feedback proves
+the scores were supplied to Meta, not how much each score caused its decision.
+F1 scores are conditional log likelihoods, not quality probabilities.
+
+The run passed all saved execution and constraint checks in 10.666 seconds.
+Returned usage gives a configured-price estimate of $0.01059180, not a reconciled
+charge. The three request IDs and per-call usage are preserved in the source row.
+The [paired report](../experiments/reharmonize_agent_eval/extended-summary.md#model-role-visible-in-the-saved-traces)
+checks the same feedback-to-offer relationship across all 440 Open executions;
+the example is not a substitute for those complete denominators and failures.
+
+**What this establishes.** Meta performs inspectable search and offer decisions
+inside the existing product, while the own model and deterministic tools provide
+distinct services. Reliability runs test whether that division of work completes
+under stated constraints. The [fixed-pool selector comparison](model-comparison.md#reharmonize-same-passages-three-selection-methods)
+provides separate exploratory baseline evidence. Neither study establishes that
+Meta is indispensable, superior to every current local selector, or preferred by
+listeners. Listening research is planned separately for a paper.
 
 ## How to verify it
 
@@ -91,6 +146,46 @@ at $0.0121, $0.0096 and $0.0048 and 11.5, 9.3 and 7.7 s, every request id record
 ([record](../experiments/meta/reharmonize_open_weights_live.json)).
 
 ## How it was measured
+
+**Expanded mode and constraint coverage, with a documented partial stop.** The
+[frozen protocol](../experiments/reharmonize_agent_stress/README.md) exercises the
+same product agent and real F1 checkpoint across 640 new authored inputs and 40
+existing regression inputs. Requested mode, key mode, chord complexity and change
+limit form 128 planned condition cells. Repeated executions are not new songs.
+
+| Expanded execution measurement | Muse Spark Open / Baseten | Muse Spark 1.3 / Meta Standard |
+|---|---:|---:|
+| Passed / started | **4,186 / 4,240** | **1,673 / 1,716** |
+| Failed / operator-cancelled | 54 / 0 | 42 / 1 |
+| Planned but not started | 0 | 2,524 |
+| Offered candidates matching tool feedback, with finite F1 scores | 12,558 / 12,558 | 5,019 / 5,019 |
+| HTTP attempts / extra attempts within tool turns | 12,504 / 10 | 5,189 / 0 |
+| p50 / p95 seconds, all started runs | 5.259 / 8.239 | 15.222 / 24.568 |
+| Configured-price estimate from returned usage | $28.04348590 | $20.63406350 |
+| Unknown-usage reservation | $0 | $0.09642150 |
+
+Open finished all scheduled runs. Its 54 failures are six repeats of each of nine
+inputs whose candidate shortage was detected before paid execution and retained.
+Spark 1.3 was deliberately stopped after reviewing scope and submission priorities;
+it recorded 36 capacity failures, three timeouts, three tool-call response failures
+and one cancellation. The stop was post-hoc, not a preregistered statistical rule.
+The 2,524 unstarted rows remain in the original 8,480-row schedule, separately from
+failures. Both providers reached all 128 condition cells, but Spark did not complete
+the repeat schedule or start regression cases. Full-arm success rates are not a
+head-to-head comparison. On all 1,716 case/repeat rows started by both providers,
+including failures and cancellation, Open passed 1,680 and Spark 1.3 passed 1,673;
+this is a non-random partial subset, not a musical-quality ranking.
+
+Combined nominal accounting is **$48.77397090**, including the unknown-usage
+reservation. This is not a paid invoice or measured credit deduction. The
+[report](../experiments/reharmonize_agent_stress/summary.md) and
+[numeric evidence](../experiments/reharmonize_agent_stress/summary.json) retain raw
+requests, tool feedback, responses, IDs, usage, retries and failures. Product code,
+UX, prompts, search, scoring, candidate generation and runtime settings are unchanged.
+The study stops at the returned offer and does not test browser interaction,
+application, MIDI export or DAW playback. Related authored templates, repeat
+dependence and provider/cache differences limit generalization. Listening research
+is planned separately for a paper.
 
 The studies below retain their separate tasks, inputs and denominators. Provider
 request IDs and usage are kept where returned; missing values after a timeout
