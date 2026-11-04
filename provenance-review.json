@@ -1896,6 +1896,1316 @@
       "candidates": []
     },
     {
+      "path": "experiments/reharmonize_agent_stress/completion-summary.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/completion-summary.md",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/README.md",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/launch.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/meta-0-progress.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/meta-1-progress.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/outcome.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/plan.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-1-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-aeolian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-auto-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-dorian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-ionian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-1-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-locrian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-lydian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-mixolydian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-2-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/new-phrygian-3-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r10/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r10/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r7/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r7/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r8/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r8/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r9/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-0-r9/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r1/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r1/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r10/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r10/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r2/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r2/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r3/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r3/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r4/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r4/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r5/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r5/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r6/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r6/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r7/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r7/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r8/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r8/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r9/ledger.json",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/continuation/runs/meta/regression-1-r9/results.json.gz",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
       "path": "experiments/reharmonize_agent_stress/design.json",
       "delivery": "file",
       "candidates": []
@@ -2466,6 +3776,16 @@
       "candidates": []
     },
     {
+      "path": "experiments/reharmonize_agent_stress/tools/completion_report.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/tools/continue_meta.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
       "path": "experiments/reharmonize_agent_stress/tools/preflight.py",
       "delivery": "file",
       "candidates": []
@@ -2482,6 +3802,16 @@
     },
     {
       "path": "experiments/reharmonize_agent_stress/tools/test_campaign.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/tools/test_completion_report.py",
+      "delivery": "file",
+      "candidates": []
+    },
+    {
+      "path": "experiments/reharmonize_agent_stress/tools/test_continue_meta.py",
       "delivery": "file",
       "candidates": []
     },
