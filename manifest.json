@@ -9,7 +9,7 @@
   },
   "development": {
     "repository": "https://github.com/PearlLeeStudio/TheArtist-DAW",
-    "commit": "7b9c7354bb35a04a59946683099a790c957186fa"
+    "commit": "ca3a646117338292058611edce185769fb061082"
   },
   "patchSha256": "a8b86dde5f7945825007a6f7197d9bb4d18f163bd9bb7ac2b5994541217e2fbf",
   "materializedFiles": {
@@ -4646,7 +4646,7 @@
     "screenshot/13-reharmonize-alternatives.png": "4ee2a3e4a280c93940549b93be279b23b5e3932ea8c7e8e1a0b3d6366f95fc80",
     "scripts/bootstrap_submission.py": "1fc9622e30b3acfc094c907d82e7f61a93d968359b2895922c4a369cf53947a5",
     "scripts/build_submission.py": "f9d3230a21b13a095be11a22714c8c702ced8eadfd17c1695e4bda6c261ed420",
-    "scripts/submission_README.md": "299d38f678fe500420a8f07b9a19eb34f3fdd479214502de42c0d84d1cd78c65",
+    "scripts/submission_README.md": "15e889d21e0566513d3b0a5fbea511236fa4ecaab89d0cc5c9d856e0a07718e6",
     "scripts/verify_reconstruction.py": "12c9889dcb98af3f20415f36160d234283a7a2929355f733d4fa399e13277c65",
     "tools/midi-bridge/.gitignore": "03824949a66ab6db1429bd078d10d1bc2d75706aa1b756c547f9a7ff541c77cb",
     "tools/midi-bridge/CoreMidiInput.swift": "a634e3236c262a4c2c58ce56b2ed1d0c2dcd092f0c835e5e9ba0d2bdf662d15e",
